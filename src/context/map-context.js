@@ -16,33 +16,10 @@ export const BASE_MAPS = [
   'streets-v12',
 ]
 
-const RALEIGH_NC = {
-  label: 'Raleigh, NC',
-  longitude: -78.644257,
-  latitude: 35.787743,
-  zoom: 12,
-}
-
-const CHAPEL_HILL_NC = {
-  label: 'Chapel Hill, NC',
-  longitude: -79.055473,
-  latitude: 35.910259,
-  zoom: 12,
-}
-
-const DURHAM_NC = {
-  label: 'Durham, NC',
-  longitude: -78.898621,
-  latitude: 35.994034,
-  zoom: 12,
-}
-
-const WILMINGTON_NC = {
-  label: 'Wilmington, NC',
-  longitude: -77.944710,
-  latitude: 34.225727,
-  zoom: 12,
-}
+const RALEIGH_NC =     { label: 'Raleigh, NC',     longitude: -78.644257, latitude: 35.787743, zoom: 12 }
+const CHAPEL_HILL_NC = { label: 'Chapel Hill, NC', longitude: -79.055473, latitude: 35.910259, zoom: 12 }
+const DURHAM_NC =      { label: 'Durham, NC',      longitude: -78.898621, latitude: 35.994034, zoom: 12 }
+const WILMINGTON_NC =  { label: 'Wilmington, NC',  longitude: -77.944710, latitude: 34.225727, zoom: 12 }
 
 export const MapProvider = ({ children }) => {
   const mapRef = useRef(null)
@@ -60,7 +37,10 @@ export const MapProvider = ({ children }) => {
     <MapContext.Provider value={{
       mapRef,
       baseMap, setBaseMap,
-      viewState, setViewState,
+      viewState: {
+        current: viewState,
+        set: setViewState,
+      },
       locationPresets,
     }}>
       { children }

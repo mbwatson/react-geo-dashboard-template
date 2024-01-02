@@ -21,13 +21,13 @@ export const ViewStatePanel = () => {
       <Typography level="title-sm">View State</Typography>
       <Divider />
       <Typography level="body-sm">
-        longitude: { viewState.longitude }
+        longitude: { viewState.current.longitude }
       </Typography>
       <Typography level="body-sm">
-        latitude: { viewState.latitude }
+        latitude: { viewState.current.latitude }
       </Typography>
       <Typography level="body-sm">
-        zoom: { viewState.zoom }
+        zoom: { viewState.current.zoom }
       </Typography>
     </Card>
   )

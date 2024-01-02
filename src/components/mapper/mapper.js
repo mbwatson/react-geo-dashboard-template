@@ -4,9 +4,9 @@ import Map from 'react-map-gl'
 import { useMap } from '@context'
 import { ViewStatePanel } from './view-state-panel'
 
-export const Mapper = ({ height, width }) => {
+export const Mapper = ({ height, width, children }) => {
   const {
-    baseMap, mapRef, viewState, setViewState,
+    baseMap, mapRef, viewState,
   } = useMap()
 
   return (
@@ -17,18 +17,19 @@ export const Mapper = ({ height, width }) => {
         reuseMaps
         skipOnMount
         mapLib={ import('mapbox-gl') }
-        { ...viewState }
-        onMove={ event => setViewState(event.viewState) }
+        { ...viewState.current }
+        onMove={ event => viewState.set(event.viewState) }
         mapStyle={ `mapbox://styles/mapbox/${ baseMap }` }
         source="mapbox://mvvatson.clkpnbbi50bu62dp5dxh26pee-5d8sq"
         mapboxAccessToken={ process.env.MAPBOX_TOKEN }
-      />
+      >{ children }</Map>
       <ViewStatePanel />
     </Fragment>
   )
 }
 
 Mapper.propTypes = {
+  children: PropTypes.node,
   height: PropTypes.number,
   width: PropTypes.number,
 }
