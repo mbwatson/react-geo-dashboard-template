@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useColorScheme } from '@mui/joy/styles'
-import { useAuth } from '@context'
+import { useAuth, useData } from '@context'
 import { useWindowSize } from '@hooks'
 
 const AppContext = createContext({ })
@@ -14,6 +14,7 @@ export const AppContextProvider = ({ children }) => {
   const { mode, setMode } = useColorScheme()
   const [drawerVisibility, setDrawerVisibility] = useState(false)
   const [loading, setLoading] = useState(false)
+  const { sampleData } = useData()
 
   const togglePreferences = () => setDrawerVisibility(!drawerVisibility)
   const closePreferences = () => setDrawerVisibility(false)
@@ -70,6 +71,7 @@ export const AppContextProvider = ({ children }) => {
         },
       },
       windowSize,
+      sampleData,
     }}>
       { children }
     </AppContext.Provider>

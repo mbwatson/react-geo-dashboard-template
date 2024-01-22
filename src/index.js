@@ -5,6 +5,7 @@ import { CssVarsProvider } from '@mui/joy/styles'
 import {
   AppContextProvider,
   AuthProvider,
+  DataProvider,
   MapProvider,
 } from '@context'
 import theme from './theme'
@@ -18,11 +19,13 @@ const ProvisionedApp = () => (
   <CssVarsProvider theme={ theme } defaultMode="light">
     <HashRouter>
       <AuthProvider>
-        <MapProvider>
-          <AppContextProvider>
-            <App />
-          </AppContextProvider>
-        </MapProvider>
+        <DataProvider>
+          <MapProvider>
+            <AppContextProvider>
+              <App />
+            </AppContextProvider>
+          </MapProvider>
+        </DataProvider>
       </AuthProvider>
     </HashRouter>
   </CssVarsProvider>
