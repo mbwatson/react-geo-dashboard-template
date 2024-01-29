@@ -10,6 +10,8 @@ import {
   useReactTable,
 } from '@tanstack/react-table'
 import { useQuery } from 'react-query'
+import { InlineMath } from 'react-katex'
+import 'katex/dist/katex.min.css'
 
 const columnHelper = createColumnHelper()
 
@@ -103,7 +105,7 @@ const columns = [
       },
       {
         accessorKey: 'chemicalId.chemicalFormula',
-        cell: info => info.getValue(),
+        cell: info => <InlineMath math={ info.getValue() } />,
         header: () => <span>Chemical Formula</span>, footer: () => <span>Chemical Formula</span>,
       },
     ],
@@ -117,7 +119,7 @@ const columns = [
       {
         accessorKey: 'nontargetedChemicalId.molecularMass',
         cell: info => info.getValue(),
-        header: () => <span>Molecular Mass</span>, footer: () => <span>Molecular Mass</span>,
+        header: () => <span>Molecular Mass (g/mol)</span>, footer: () => <span>Molecular Mass (g/mol)</span>,
       },
       {
         accessorKey: 'nontargetedChemicalId.retentionTime',

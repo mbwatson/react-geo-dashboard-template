@@ -6,6 +6,7 @@ const arg = require('arg')
 const { v4: uuidv4 } = require('uuid')
 const { cities: nc } = require('./cities/nc.json')
 const { cities: wa } = require('./cities/wa.json')
+const {chemicals} = require('./pfas-chemicals.json')
 const cities = { ...nc, ...wa }
 
 // defaults
@@ -63,23 +64,23 @@ function generateRecord() {
 	const city = faker.helpers.arrayElement(cityNames)
 	const state = cities[city].state
 	const zipCode = cities[city].zipCode
-	console.log(zipCode)
 	const [lat, long] = faker.location.nearbyGPSCoordinate({
 		origin: [cities[city].lat, cities[city].long],
 		radius: 2,
 	})
 	const sampleDate = faker.date.between({ from: '2020-01-01T00:00:00.000Z', to: new Date().toISOString() })
 	const analysisDate = faker.date.between({ from: sampleDate, to: new Date().toISOString() })
-	const chemicalName = faker.string.alpha({ length: { min: 4, max: 8 }, casing: 'upper' })
-	const dtxsID = 'DTXSID' + faker.number.int({ min: 1000000, max: 9999999 })
-	const chemicalFormula = faker.string.alphanumeric({ length: { min: 5, max: 10 }, casing: 'upper' })
-	const molecularMass = faker.number.float({ min: 10, max: 1000, fractionDigits: 6 })
+	const chemical = faker.helpers.arrayElement(chemicals)
+	const chemicalName = chemical.name
+	const chemicalFormula = chemical.formula
+	const molecularMass = chemical.mass
+	const dtxsID = chemical.dtxsId
 	const retentionTime = faker.number.float({ min: 1, max: 10 })
 	const idConfidenceLevel = faker.helpers.arrayElement([
 		'1',
 		'2a (library spectrum match)',
 		'2b (de novo spectral assignment, single structure matches)',
-		'4 (known formula',
+		'4 (known formula)',
 	])
 	const abundance = faker.number.float({ min: 5, max: 1500000 })
 	const units = faker.helpers.arrayElement([
