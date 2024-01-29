@@ -41,6 +41,37 @@ const columns = [
     ]
   }),
   columnHelper.group({
+    id: 'location',
+    header: () => <span>Location</span>, footer: () => <span>Location</span>,
+    columns: [
+      {
+        accessorKey: 'location.city',
+        cell: info => info.getValue(),
+        header: () => <span>City</span>, footer: () => <span>City</span>,
+      },
+      {
+        accessorKey: 'location.state',
+        cell: info => info.getValue(),
+        header: () => <span>State</span>, footer: () => <span>State</span>,
+      },
+      {
+        accessorKey: 'location.zipCode',
+        cell: info => info.getValue(),
+        header: () => <span>ZIP Code</span>, footer: () => <span>ZIP Code</span>,
+      },
+      {
+        accessorKey: 'location.lat',
+        cell: info => info.getValue(),
+        header: () => <span>Latitude</span>, footer: () => <span>Latitude</span>,
+      },
+      {
+        accessorKey: 'location.long',
+        cell: info => info.getValue(),
+        header: () => <span>Longitude</span>, footer: () => <span>Longitude</span>,
+      },
+    ],
+  }),
+  columnHelper.group({
     id: 'temporal',
     header: () => <span>Temporal</span>, footer: () => <span>Temporal</span>,
     columns: [

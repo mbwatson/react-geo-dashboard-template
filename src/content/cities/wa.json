@@ -5,133 +5,133 @@
       "lat": 47.6062,
       "long": -122.3321,
       "county": "King",
-      "zipcode": "98101"
+      "zipCode": "98101"
     },
     "Spokane": {
       "state": "WA",
       "lat": 47.6588,
       "long": -117.4260,
       "county": "Spokane",
-      "zipcode": "99201"
+      "zipCode": "99201"
     },
     "Tacoma": {
       "state": "WA",
       "lat": 47.2529,
       "long": -122.4443,
       "county": "Pierce",
-      "zipcode": "98402"
+      "zipCode": "98402"
     },
     "Vancouver": {
       "state": "WA",
       "lat": 45.6387,
       "long": -122.6615,
       "county": "Clark",
-      "zipcode": "98660"
+      "zipCode": "98660"
     },
     "Bellevue": {
       "state": "WA",
       "lat": 47.6104,
       "long": -122.2007,
       "county": "King",
-      "zipcode": "98004"
+      "zipCode": "98004"
     },
     "Everett": {
       "state": "WA",
       "lat": 47.9789,
       "long": -122.2021,
       "county": "Snohomish",
-      "zipcode": "98201"
+      "zipCode": "98201"
     },
     "Kent": {
       "state": "WA",
       "lat": 47.3809,
       "long": -122.2348,
       "county": "King",
-      "zipcode": "98030"
+      "zipCode": "98030"
     },
     "Yakima": {
       "state": "WA",
       "lat": 46.6021,
       "long": -120.5059,
       "county": "Yakima",
-      "zipcode": "98901"
+      "zipCode": "98901"
     },
     "Renton": {
       "state": "WA",
       "lat": 47.4829,
       "long": -122.2171,
       "county": "King",
-      "zipcode": "98055"
+      "zipCode": "98055"
     },
     "Spokane Valley": {
       "state": "WA",
       "lat": 47.6732,
       "long": -117.2394,
       "county": "Spokane",
-      "zipcode": "99206"
+      "zipCode": "99206"
     },
     "Federal Way": {
       "state": "WA",
       "lat": 47.3223,
       "long": -122.3126,
       "county": "King",
-      "zipcode": "98003"
+      "zipCode": "98003"
     },
     "Yakima": {
       "state": "WA",
       "lat": 46.6021,
       "long": -120.5059,
       "county": "Yakima",
-      "zipcode": "98901"
+      "zipCode": "98901"
     },
     "Bellingham": {
       "state": "WA",
       "lat": 48.7519,
       "long": -122.4787,
       "county": "Whatcom",
-      "zipcode": "98225"
+      "zipCode": "98225"
     },
     "Kennewick": {
       "state": "WA",
       "lat": 46.2112,
       "long": -119.1372,
       "county": "Benton",
-      "zipcode": "99336"
+      "zipCode": "99336"
     },
     "Kirkland": {
       "state": "WA",
       "lat": 47.6815,
       "long": -122.2087,
       "county": "King",
-      "zipcode": "98033"
+      "zipCode": "98033"
     },
     "Auburn": {
       "state": "WA",
       "lat": 47.3073,
       "long": -122.2284,
       "county": "King",
-      "zipcode": "98002"
+      "zipCode": "98002"
     },
     "Pasco": {
       "state": "WA",
       "lat": 46.2396,
       "long": -119.1006,
       "county": "Franklin",
-      "zipcode": "99301"
+      "zipCode": "99301"
     },
     "Redmond": {
       "state": "WA",
       "lat": 47.6739,
       "long": -122.1215,
       "county": "King",
-      "zipcode": "98052"
+      "zipCode": "98052"
     },
     "Lakewood": {
       "state": "WA",
       "lat": 47.1718,
       "long": -122.5185,
       "county": "Pierce",
-      "zipcode": "98499"
+      "zipCode": "98499"
     }
   }
 }

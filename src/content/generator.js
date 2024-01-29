@@ -63,6 +63,7 @@ function generateRecord() {
 	const city = faker.helpers.arrayElement(cityNames)
 	const state = cities[city].state
 	const zipCode = cities[city].zipCode
+	console.log(zipCode)
 	const [lat, long] = faker.location.nearbyGPSCoordinate({
 		origin: [cities[city].lat, cities[city].long],
 		radius: 2,
@@ -122,15 +123,15 @@ function generateRecord() {
 		units,
 		mrlOrDl,
 	}
-	
+
   return {
   	id: uuidv4(),
-  	'study': study,
-  	'location': location,
-  	'temporal': temporal,
-  	'chemicalId': chemicalIdentity,
-  	'nontargetedChemicalId': nontargetedRelevantChemicalId,
-  	'quantitation': quantitation,
+  	study: study,
+  	location: location,
+  	temporal: temporal,
+  	chemicalId: chemicalIdentity,
+  	nontargetedChemicalId: nontargetedRelevantChemicalId,
+  	quantitation: quantitation,
   }
 }
 
