@@ -38,7 +38,7 @@ export const ControlPanel = () => {
             <ListItemDecorator>
               <AddIcon />
             </ListItemDecorator>
-            Add
+            Add {/* add sample layers, by dataset, by date, by...? */}
           </ListItemButton>
         </ListItem>
 

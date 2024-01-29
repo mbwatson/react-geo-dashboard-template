@@ -12,7 +12,7 @@ const clusterLayer = {
   paint: {
     'circle-color': ['step', ['get', 'point_count'], '#007abc', 25, '#19a7bc', 50, '#3ebca3'],
     'circle-radius': ['step', ['get', 'point_count'], 25, 100, 50, 200, 40]
-  }
+  },
 }
 
 const clusterCountLayer = {
@@ -37,7 +37,7 @@ const unclusteredPointLayer = {
   filter: ['!', ['has', 'point_count']],
   paint: {
     'circle-color': '#66bc94',
-    'circle-radius': 5,
+    'circle-radius': 10,
     'circle-stroke-width': 1,
     'circle-stroke-color': '#66bc94'
   }
@@ -50,8 +50,13 @@ export const MapView = () => {
 
   const geojson = {
     type: 'FeatureCollection',
-    features: data.sample.data.map(({ location }) => ({
-      type: 'Feature', geometry: { type: 'Point', coordinates: [location.long, location.lat] }
+    features: data.sample.data.map(sample => ({
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [sample.location.long, sample.location.lat],
+      },
+      properties: { ...sample },
     })),
   }
 
@@ -61,7 +66,6 @@ export const MapView = () => {
     
     // if no feature layer is present, bail out now.
     if (!feature) {
-      console.log('no samples found at the clicked location')
       handleClosePopup()
       return
     }
@@ -72,16 +76,19 @@ export const MapView = () => {
 
     // if we have a cluster...
     if (feature.layer.id === clusterLayer.id) {
+      // with the source data...
       const clusterSource = mapRef.current.getSource('samples')
-      console.log({ clusterSource })
-      const clusterId = feature.properties.cluster_id
-      clusterSource.getClusterChildren(clusterId, function(error, aFeatures){
-        console.log(aFeatures)
-      })
-      setPopupInfo({
-        lat: feature.geometry.coordinates[1],
-        long: feature.geometry.coordinates[0],
-        text: 'cluster details',
+      // ...and the id of the clicked-on cluster,
+      const { cluster_id } = feature.properties
+      // we'll identify the samples that comprise it.
+      clusterSource.getClusterLeaves(cluster_id, 100, 0, function(error, aFeatures){
+        const samples = aFeatures.map(f => f.properties.id)
+        setPopupInfo({
+          lat: feature.geometry.coordinates[1],
+          long: feature.geometry.coordinates[0],
+          title: 'SAMPLES',
+          data: samples,
+        })
       })
       return
     }
@@ -91,13 +98,13 @@ export const MapView = () => {
       setPopupInfo({
         lat: feature.geometry.coordinates[1],
         long: feature.geometry.coordinates[0],
-        text: 'sample details',
+        title: 'SAMPLE',
+        data: feature.properties.id,
       })
     }
   }
 
   const handleClosePopup = () => {
-    console.log('closing popup')
     setPopupInfo(null)
   }
 
@@ -110,9 +117,14 @@ export const MapView = () => {
         willChange: 'transform',
         zIndex: 999,
         backgroundColor: 'transparent',
+        color: 'black',
         minWidth: '300px',
         minHeight: '300px',
-        color: 'black',
+        overflow: 'hidden',
+        'pre': {
+          maxHeight: '200px',
+          overflow: 'auto'
+        }
       },
       '.mapboxgl-popup-tip': {
         width: '1rem',
@@ -159,8 +171,13 @@ export const MapView = () => {
                   latitude={ popupInfo.lat }
                   onClose={ handleClosePopup }
                 >
-                  { popupInfo.text }
+                  <strong>{ popupInfo.title }</strong>
+                  <pre>
+                    { JSON.stringify(popupInfo.data, null, 2) }
+                  </pre>
+
                   <br />
+                  
                   <a href="#">view in table</a>
                 </Popup>
               )
