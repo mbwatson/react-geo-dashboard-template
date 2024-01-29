@@ -1,0 +1,3459 @@
+[
+  {
+    "id": "f173bb38-27ba-4bfd-b1f4-b81c230d2078",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 47,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Everett",
+      "state": "WA",
+      "lat": 47.97934724323951,
+      "long": -122.17427145367674
+    },
+    "temporal": {
+      "sampleDate": "2020-07-05T02:26:54.064Z",
+      "analysisDate": "2023-03-14T23:57:12.373Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JGICGHV",
+      "dtxsID": "DTXSID2079249",
+      "chemicalFormula": "LY9OXNWPV"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 44.213100485503674,
+      "retentionTime": 8.430627005873248,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 947384.7198707261,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 3896.631670718803
+    }
+  },
+  {
+    "id": "c7635172-07b0-47d9-851e-13780d56a414",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 47,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Bellingham",
+      "state": "WA",
+      "lat": 48.73605324192924,
+      "long": -122.46753047346448
+    },
+    "temporal": {
+      "sampleDate": "2020-03-09T02:49:57.470Z",
+      "analysisDate": "2021-12-06T09:40:23.723Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ROUSTTSG",
+      "dtxsID": "DTXSID2193973",
+      "chemicalFormula": "61EYT74"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 826.9819447747432,
+      "retentionTime": 5.344764483626932,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 471767.8559929691,
+      "units": "ng/L",
+      "mrlOrDl": 8016.324930136907
+    }
+  },
+  {
+    "id": "71218f4a-b9d5-4bab-9071-6f1f16ee5049",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 26,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zipCode": "27101",
+      "lat": 36.10088703470693,
+      "long": -80.2480885244853
+    },
+    "temporal": {
+      "sampleDate": "2022-08-10T06:16:46.987Z",
+      "analysisDate": "2023-11-21T07:18:07.964Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ZUYPMSG",
+      "dtxsID": "DTXSID4841925",
+      "chemicalFormula": "WKPPDV"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 622.6077078701928,
+      "retentionTime": 1.868708889465779,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 116104.72835192573,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 9260.619463508436
+    }
+  },
+  {
+    "id": "d6f56645-0fd6-426d-9b5b-5065aab5a03e",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 100,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Pasco",
+      "state": "WA",
+      "lat": 46.24197954740056,
+      "long": -119.11308235908069
+    },
+    "temporal": {
+      "sampleDate": "2023-01-27T04:09:00.612Z",
+      "analysisDate": "2023-12-23T16:01:43.327Z"
+    },
+    "chemicalId": {
+      "chemicalName": "SPNKZK",
+      "dtxsID": "DTXSID5287057",
+      "chemicalFormula": "S8JSL2FGA"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 653.8000692334026,
+      "retentionTime": 6.330900393659249,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 89088.43190039974,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 6587.135906532058
+    }
+  },
+  {
+    "id": "951b744a-7980-411b-ae03-c7e7b85cdd38",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 100,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Jacksonville",
+      "state": "NC",
+      "zipCode": "28540",
+      "lat": 34.75154287986621,
+      "long": -77.4284031679382
+    },
+    "temporal": {
+      "sampleDate": "2023-12-26T02:02:23.985Z",
+      "analysisDate": "2023-12-30T20:08:46.903Z"
+    },
+    "chemicalId": {
+      "chemicalName": "QMYHW",
+      "dtxsID": "DTXSID3895573",
+      "chemicalFormula": "JD3TOU01FB"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 946.7036499711685,
+      "retentionTime": 8.21029613330029,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 580487.6128202269,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 8318.181313640647
+    }
+  },
+  {
+    "id": "7a8df02d-5c79-4e1b-975c-d82d35cea9dd",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 93,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Vancouver",
+      "state": "WA",
+      "lat": 45.63193041146317,
+      "long": -122.65786583531826
+    },
+    "temporal": {
+      "sampleDate": "2022-02-02T07:23:56.437Z",
+      "analysisDate": "2023-05-28T00:53:16.918Z"
+    },
+    "chemicalId": {
+      "chemicalName": "BSAZOU",
+      "dtxsID": "DTXSID2790742",
+      "chemicalFormula": "E2Q3T"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 182.6320629264228,
+      "retentionTime": 7.322748782346025,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 988066.6556180618,
+      "units": "ng/L",
+      "mrlOrDl": 3010.9468872070543
+    }
+  },
+  {
+    "id": "accc06ba-86f8-443a-b8ac-965061887ae6",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Serum",
+      "sampleCount": 69,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Everett",
+      "state": "WA",
+      "lat": 47.97967110158581,
+      "long": -122.2024800684764
+    },
+    "temporal": {
+      "sampleDate": "2022-03-26T02:12:20.988Z",
+      "analysisDate": "2023-03-23T23:38:23.204Z"
+    },
+    "chemicalId": {
+      "chemicalName": "PLTHSY",
+      "dtxsID": "DTXSID9537484",
+      "chemicalFormula": "J9DDG"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 636.4015499781817,
+      "retentionTime": 9.148375497432426,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 999791.1332857213,
+      "units": "ng/g",
+      "mrlOrDl": 164.7259169327095
+    }
+  },
+  {
+    "id": "b4a8aa02-38b4-4848-ab92-484960ac1167",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 57,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zipCode": "27101",
+      "lat": 36.09902359350897,
+      "long": -80.25513480997449
+    },
+    "temporal": {
+      "sampleDate": "2023-12-11T14:45:01.514Z",
+      "analysisDate": "2023-12-26T09:44:20.826Z"
+    },
+    "chemicalId": {
+      "chemicalName": "IIUAMB",
+      "dtxsID": "DTXSID6008710",
+      "chemicalFormula": "478G15946"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 934.0671388921328,
+      "retentionTime": 2.799469257472083,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 518492.0323924732,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 5259.530431044684
+    }
+  },
+  {
+    "id": "871f1884-4c1e-41b3-b675-bbd08af8a1e6",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 98,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Yakima",
+      "state": "WA",
+      "lat": 46.58350165542532,
+      "long": -120.49277431832957
+    },
+    "temporal": {
+      "sampleDate": "2021-04-14T07:21:28.956Z",
+      "analysisDate": "2022-09-29T01:39:54.831Z"
+    },
+    "chemicalId": {
+      "chemicalName": "VTJISBW",
+      "dtxsID": "DTXSID1061703",
+      "chemicalFormula": "H4N2PTP5FF"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 459.57650754833594,
+      "retentionTime": 3.2786557152867317,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 246337.49765141867,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 7969.772005104553
+    }
+  },
+  {
+    "id": "fcfc07a0-9282-43a6-bccb-d6b929bc91c3",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 68,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Redmond",
+      "state": "WA",
+      "lat": 47.66882353789238,
+      "long": -122.12519269193774
+    },
+    "temporal": {
+      "sampleDate": "2020-07-26T03:07:58.352Z",
+      "analysisDate": "2020-10-31T20:18:49.290Z"
+    },
+    "chemicalId": {
+      "chemicalName": "XNBVGBY",
+      "dtxsID": "DTXSID8119245",
+      "chemicalFormula": "37TUEUL18"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 486.8265860551037,
+      "retentionTime": 5.929523243568838,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 255661.9887930015,
+      "units": "ng/L",
+      "mrlOrDl": 328.0432549149729
+    }
+  },
+  {
+    "id": "d31ea42f-3705-41a3-b41e-c581d5f2b8f5",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 30,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Asheville",
+      "state": "NC",
+      "zipCode": "28801",
+      "lat": 35.59595868984996,
+      "long": -82.55765516189018
+    },
+    "temporal": {
+      "sampleDate": "2021-12-03T14:48:42.893Z",
+      "analysisDate": "2023-10-04T14:22:20.039Z"
+    },
+    "chemicalId": {
+      "chemicalName": "AVSA",
+      "dtxsID": "DTXSID1057751",
+      "chemicalFormula": "HCNEVGMI"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 720.6525182630867,
+      "retentionTime": 4.762284310534596,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 239601.59221352544,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 9494.690341665782
+    }
+  },
+  {
+    "id": "86b285f2-0ee1-49cf-8ea8-67937c074e26",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 95,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Charlotte",
+      "state": "NC",
+      "zipCode": "28201",
+      "lat": 35.24839276832938,
+      "long": -80.8437899923436
+    },
+    "temporal": {
+      "sampleDate": "2021-04-19T09:00:43.134Z",
+      "analysisDate": "2023-09-22T21:08:36.692Z"
+    },
+    "chemicalId": {
+      "chemicalName": "IVCE",
+      "dtxsID": "DTXSID9666112",
+      "chemicalFormula": "LTRDNC30P"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 504.42251650150865,
+      "retentionTime": 2.9386985113378614,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 544234.8576179647,
+      "units": "ng/L",
+      "mrlOrDl": 5118.635789280059
+    }
+  },
+  {
+    "id": "f01e97ef-9051-4af9-bb67-b1c0db9ff7a7",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 23,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Greensboro",
+      "state": "NC",
+      "zipCode": "27401",
+      "lat": 36.071543905571524,
+      "long": -79.79137566941819
+    },
+    "temporal": {
+      "sampleDate": "2021-12-23T17:41:47.003Z",
+      "analysisDate": "2023-05-24T14:07:29.040Z"
+    },
+    "chemicalId": {
+      "chemicalName": "BHYEDX",
+      "dtxsID": "DTXSID4036993",
+      "chemicalFormula": "LKIQ6BVP"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 18.380745274480432,
+      "retentionTime": 2.2707443814724684,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 1492766.6777643887,
+      "units": "ng/ml",
+      "mrlOrDl": 3332.4612331281414
+    }
+  },
+  {
+    "id": "d9713754-6b41-4a00-b6d1-833fb3794472",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 5,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Asheville",
+      "state": "NC",
+      "zipCode": "28801",
+      "lat": 35.599519167753805,
+      "long": -82.57021162303306
+    },
+    "temporal": {
+      "sampleDate": "2022-11-14T05:43:14.631Z",
+      "analysisDate": "2023-06-02T04:04:59.632Z"
+    },
+    "chemicalId": {
+      "chemicalName": "TXTDE",
+      "dtxsID": "DTXSID4552400",
+      "chemicalFormula": "UPIAGT5RD1"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 490.61477210605517,
+      "retentionTime": 5.460977266076952,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 265153.47098709433,
+      "units": "ng/g",
+      "mrlOrDl": 8816.779532805154
+    }
+  },
+  {
+    "id": "667eb898-1e69-4f69-b11a-91de39434389",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 57,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Charlotte",
+      "state": "NC",
+      "zipCode": "28201",
+      "lat": 35.232048973255466,
+      "long": -80.853359487175
+    },
+    "temporal": {
+      "sampleDate": "2021-08-11T03:11:22.714Z",
+      "analysisDate": "2023-06-13T12:16:57.597Z"
+    },
+    "chemicalId": {
+      "chemicalName": "FMVHVFZ",
+      "dtxsID": "DTXSID6017985",
+      "chemicalFormula": "S4ZQZ"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 59.51399660902098,
+      "retentionTime": 8.831483470043167,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 233562.06624119775,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 1795.4260640058665
+    }
+  },
+  {
+    "id": "a9725a0f-f090-42b3-a955-38f1755f3240",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Serum",
+      "sampleCount": 10,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Cary",
+      "state": "NC",
+      "zipCode": "27511",
+      "lat": 35.76626253520512,
+      "long": -78.7802115010764
+    },
+    "temporal": {
+      "sampleDate": "2020-12-27T03:10:29.119Z",
+      "analysisDate": "2022-01-16T03:36:42.450Z"
+    },
+    "chemicalId": {
+      "chemicalName": "BKLOBS",
+      "dtxsID": "DTXSID7506258",
+      "chemicalFormula": "4HT6386Z14"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 923.1844894401729,
+      "retentionTime": 6.945048633264378,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1340517.3227075848,
+      "units": "ng/g",
+      "mrlOrDl": 7267.12069880357
+    }
+  },
+  {
+    "id": "e9efff17-e022-4e94-902a-0a41ed73a4a0",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 89,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Seattle",
+      "state": "WA",
+      "lat": 47.60833118068224,
+      "long": -122.33766066427285
+    },
+    "temporal": {
+      "sampleDate": "2021-07-08T22:24:21.924Z",
+      "analysisDate": "2023-09-03T10:15:05.478Z"
+    },
+    "chemicalId": {
+      "chemicalName": "CKPB",
+      "dtxsID": "DTXSID6613272",
+      "chemicalFormula": "O4LN95"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 417.94972627656534,
+      "retentionTime": 2.8294468785170466,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 151604.1831231676,
+      "units": "ng/ml",
+      "mrlOrDl": 5221.429788526194
+    }
+  },
+  {
+    "id": "87f7b698-6cd9-4554-a2ea-ee736b0facb0",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 88,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Seattle",
+      "state": "WA",
+      "lat": 47.61334025328447,
+      "long": -122.33709368588018
+    },
+    "temporal": {
+      "sampleDate": "2023-03-19T08:32:51.756Z",
+      "analysisDate": "2023-06-17T02:11:18.267Z"
+    },
+    "chemicalId": {
+      "chemicalName": "SJQYSZS",
+      "dtxsID": "DTXSID7104793",
+      "chemicalFormula": "YC97FR"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 654.8611023789272,
+      "retentionTime": 6.761897075222805,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 128774.2345123936,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 3606.6483648279213
+    }
+  },
+  {
+    "id": "679a0072-eb15-4aa7-a16f-a95973dc42f9",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 28,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Charlotte",
+      "state": "NC",
+      "zipCode": "28201",
+      "lat": 35.21314388924452,
+      "long": -80.83196117820893
+    },
+    "temporal": {
+      "sampleDate": "2021-08-09T18:42:35.916Z",
+      "analysisDate": "2022-12-15T03:58:19.215Z"
+    },
+    "chemicalId": {
+      "chemicalName": "TENZM",
+      "dtxsID": "DTXSID8289018",
+      "chemicalFormula": "6UT6I6M"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 292.73920906940475,
+      "retentionTime": 9.884555280674249,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 965999.1719711397,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 4921.51417338443
+    }
+  },
+  {
+    "id": "21f7ebf3-faf3-4b79-a6ba-642216ebc8ca",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 36,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Vancouver",
+      "state": "WA",
+      "lat": 45.63998287652153,
+      "long": -122.66295958559044
+    },
+    "temporal": {
+      "sampleDate": "2022-02-13T22:13:12.429Z",
+      "analysisDate": "2023-01-07T09:24:59.334Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ORTOE",
+      "dtxsID": "DTXSID5331204",
+      "chemicalFormula": "ERXZHV4"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 378.6868741712533,
+      "retentionTime": 6.1625128539744765,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 765306.6366480093,
+      "units": "ng/L",
+      "mrlOrDl": 9596.6610250646
+    }
+  },
+  {
+    "id": "4ccbf7b3-33e1-40fe-88be-bf42a5236ff7",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 53,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Chapel Hill",
+      "state": "NC",
+      "zipCode": "27514",
+      "lat": 35.91410176803135,
+      "long": -79.02577596028755
+    },
+    "temporal": {
+      "sampleDate": "2020-02-23T04:03:06.916Z",
+      "analysisDate": "2023-08-15T00:01:50.575Z"
+    },
+    "chemicalId": {
+      "chemicalName": "YGCPOTJ",
+      "dtxsID": "DTXSID5655454",
+      "chemicalFormula": "0F9WTL9X6J"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 60.33279807539657,
+      "retentionTime": 4.185232679126784,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1190302.7838125895,
+      "units": "ng/ml",
+      "mrlOrDl": 731.6639288291102
+    }
+  },
+  {
+    "id": "e23d9a44-e432-4643-ad8c-49e5b39043dd",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 69,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Spokane",
+      "state": "WA",
+      "lat": 47.647632929584844,
+      "long": -117.42111759175373
+    },
+    "temporal": {
+      "sampleDate": "2023-07-18T13:21:00.415Z",
+      "analysisDate": "2023-10-15T07:21:06.004Z"
+    },
+    "chemicalId": {
+      "chemicalName": "OVICDAHI",
+      "dtxsID": "DTXSID8159798",
+      "chemicalFormula": "HMRSJQQT"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 930.5741265276447,
+      "retentionTime": 8.95640855981037,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1402888.1118429312,
+      "units": "ng/g",
+      "mrlOrDl": 4697.5156437248
+    }
+  },
+  {
+    "id": "0961948b-9879-4869-bd76-4e02547cb2f0",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 78,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zipCode": "27101",
+      "lat": 36.118198940238095,
+      "long": -80.26348829590836
+    },
+    "temporal": {
+      "sampleDate": "2020-12-26T02:24:52.078Z",
+      "analysisDate": "2021-03-04T04:33:20.298Z"
+    },
+    "chemicalId": {
+      "chemicalName": "HPNUFSM",
+      "dtxsID": "DTXSID7654663",
+      "chemicalFormula": "FTUZJGKRRV"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 194.4096658239141,
+      "retentionTime": 5.031813933048397,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1126137.6265762525,
+      "units": "ng/ml",
+      "mrlOrDl": 5682.316065059836
+    }
+  },
+  {
+    "id": "171846d7-756e-4411-9b11-8ee0b2545f91",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 65,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Rocky Mount",
+      "state": "NC",
+      "zipCode": "27801",
+      "lat": 35.93075493060513,
+      "long": -77.78573643762422
+    },
+    "temporal": {
+      "sampleDate": "2023-12-15T16:15:20.381Z",
+      "analysisDate": "2023-12-19T23:02:16.743Z"
+    },
+    "chemicalId": {
+      "chemicalName": "IGQH",
+      "dtxsID": "DTXSID1426038",
+      "chemicalFormula": "3F1XBP"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 742.0130898687057,
+      "retentionTime": 4.44105740590021,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1346962.5523958227,
+      "units": "ng/L",
+      "mrlOrDl": 1281.8705533987375
+    }
+  },
+  {
+    "id": "6e889488-b8bc-454c-846c-188e1a6360d2",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 60,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Yakima",
+      "state": "WA",
+      "lat": 46.60000657135376,
+      "long": -120.52562454497217
+    },
+    "temporal": {
+      "sampleDate": "2020-08-18T04:34:25.646Z",
+      "analysisDate": "2022-02-19T14:53:27.911Z"
+    },
+    "chemicalId": {
+      "chemicalName": "AVII",
+      "dtxsID": "DTXSID1847947",
+      "chemicalFormula": "CWJPI"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 374.0088073397055,
+      "retentionTime": 8.55270643113181,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 1421791.2510931015,
+      "units": "ng/g",
+      "mrlOrDl": 7780.103910426726
+    }
+  },
+  {
+    "id": "091c45cd-dca6-41b8-82e7-88df52294f89",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 37,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Greenville",
+      "state": "NC",
+      "zipCode": "27834",
+      "lat": 35.58879841268369,
+      "long": -77.37756664553956
+    },
+    "temporal": {
+      "sampleDate": "2021-01-19T17:03:57.476Z",
+      "analysisDate": "2023-12-09T01:59:13.940Z"
+    },
+    "chemicalId": {
+      "chemicalName": "GCQKEXLB",
+      "dtxsID": "DTXSID3535184",
+      "chemicalFormula": "6Q8FJ"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 733.6970044183545,
+      "retentionTime": 4.176409793552011,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 788156.378009409,
+      "units": "ng/L",
+      "mrlOrDl": 3048.546792852576
+    }
+  },
+  {
+    "id": "df932ff3-d533-44f6-99c6-0561953d5b92",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 67,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Greensboro",
+      "state": "NC",
+      "zipCode": "27401",
+      "lat": 36.064187075324064,
+      "long": -79.76462550644771
+    },
+    "temporal": {
+      "sampleDate": "2021-11-18T06:56:01.749Z",
+      "analysisDate": "2023-03-19T06:42:23.537Z"
+    },
+    "chemicalId": {
+      "chemicalName": "WILGEM",
+      "dtxsID": "DTXSID3806872",
+      "chemicalFormula": "UBS1AUJME"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 238.44155804021284,
+      "retentionTime": 2.8316046947147697,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 404387.2605439357,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 9211.319080536789
+    }
+  },
+  {
+    "id": "a59b994e-d3d0-4c4c-9331-0c6f0fa033b0",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 5,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Asheville",
+      "state": "NC",
+      "zipCode": "28801",
+      "lat": 35.61632921253519,
+      "long": -82.55767802493091
+    },
+    "temporal": {
+      "sampleDate": "2020-06-25T19:21:27.937Z",
+      "analysisDate": "2023-12-30T03:33:46.475Z"
+    },
+    "chemicalId": {
+      "chemicalName": "HRULXEZ",
+      "dtxsID": "DTXSID1120771",
+      "chemicalFormula": "656TCP"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 512.1368426387198,
+      "retentionTime": 8.9296035959851,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 409218.3429260121,
+      "units": "ng/ml",
+      "mrlOrDl": 6313.153246987099
+    }
+  },
+  {
+    "id": "3286cc10-0b59-4015-94cb-8aa1be48ac44",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 17,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Jacksonville",
+      "state": "NC",
+      "zipCode": "28540",
+      "lat": 34.76966869724698,
+      "long": -77.43282031146703
+    },
+    "temporal": {
+      "sampleDate": "2023-04-11T11:43:55.952Z",
+      "analysisDate": "2023-07-11T08:47:52.052Z"
+    },
+    "chemicalId": {
+      "chemicalName": "BLAGQWYM",
+      "dtxsID": "DTXSID2587578",
+      "chemicalFormula": "3MC2C"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 279.4119610870257,
+      "retentionTime": 5.996148988604546,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 318328.6116744741,
+      "units": "ng/L",
+      "mrlOrDl": 5610.6682848760165
+    }
+  },
+  {
+    "id": "b930d0e7-f5c5-4d3b-823c-4f076a4ade28",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Serum",
+      "sampleCount": 20,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Bellingham",
+      "state": "WA",
+      "lat": 48.75334985855577,
+      "long": -122.48111970325635
+    },
+    "temporal": {
+      "sampleDate": "2022-05-25T12:16:20.492Z",
+      "analysisDate": "2022-12-16T08:41:35.132Z"
+    },
+    "chemicalId": {
+      "chemicalName": "DYJH",
+      "dtxsID": "DTXSID1858104",
+      "chemicalFormula": "FIUND7FG"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 964.6079252380878,
+      "retentionTime": 3.7144801802933216,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 459311.03293161374,
+      "units": "ng/ml",
+      "mrlOrDl": 9825.093520863727
+    }
+  },
+  {
+    "id": "cab9d742-2c85-4a38-87f6-8c55b95f467a",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 8,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Spokane",
+      "state": "WA",
+      "lat": 47.65788320726659,
+      "long": -117.44638784241658
+    },
+    "temporal": {
+      "sampleDate": "2020-11-26T14:01:30.059Z",
+      "analysisDate": "2022-02-17T13:55:47.861Z"
+    },
+    "chemicalId": {
+      "chemicalName": "DEEOLHF",
+      "dtxsID": "DTXSID2814290",
+      "chemicalFormula": "S949J8CYGS"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 116.42738539492711,
+      "retentionTime": 1.6438302644528449,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 1156406.1807228997,
+      "units": "ng/L",
+      "mrlOrDl": 5637.7693052066725
+    }
+  },
+  {
+    "id": "86a23996-0fdc-44d2-9b73-6808e8edd9c8",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 96,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Fayetteville",
+      "state": "NC",
+      "zipCode": "28301",
+      "lat": 35.06175734918263,
+      "long": -78.90392981736227
+    },
+    "temporal": {
+      "sampleDate": "2022-10-10T01:42:29.655Z",
+      "analysisDate": "2022-11-19T19:26:22.651Z"
+    },
+    "chemicalId": {
+      "chemicalName": "AONWIWBG",
+      "dtxsID": "DTXSID2425370",
+      "chemicalFormula": "33NOUA"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 517.7605347055942,
+      "retentionTime": 6.876500402344391,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 549340.6248779781,
+      "units": "ng/g",
+      "mrlOrDl": 9886.892702889163
+    }
+  },
+  {
+    "id": "fbb38c47-94fd-4675-8936-ca5fa5a12f85",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 89,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Jacksonville",
+      "state": "NC",
+      "zipCode": "28540",
+      "lat": 34.75796579081764,
+      "long": -77.40374128737278
+    },
+    "temporal": {
+      "sampleDate": "2020-12-16T09:03:44.248Z",
+      "analysisDate": "2022-10-30T20:41:11.338Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ZUPPD",
+      "dtxsID": "DTXSID4540209",
+      "chemicalFormula": "QBDP41L"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 756.082898825407,
+      "retentionTime": 4.598101969575509,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 610914.6643858158,
+      "units": "ng/g",
+      "mrlOrDl": 568.6409021354281
+    }
+  },
+  {
+    "id": "ee229291-743f-49f8-bea9-039f82e11233",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 21,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Durham",
+      "state": "NC",
+      "zipCode": "27701",
+      "lat": 35.9946165548748,
+      "long": -78.91952770975502
+    },
+    "temporal": {
+      "sampleDate": "2023-01-16T13:05:56.668Z",
+      "analysisDate": "2023-07-02T00:13:58.586Z"
+    },
+    "chemicalId": {
+      "chemicalName": "XSPE",
+      "dtxsID": "DTXSID2634109",
+      "chemicalFormula": "K0DM9SB2U"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 774.9746668501757,
+      "retentionTime": 3.341677057556808,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1112535.0095525768,
+      "units": "ng/ml",
+      "mrlOrDl": 640.5266398423817
+    }
+  },
+  {
+    "id": "7a4cd82e-f884-499e-b382-1514c0e16104",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 53,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Raleigh",
+      "state": "NC",
+      "zipCode": "27601",
+      "lat": 35.787265982575875,
+      "long": -78.6253594295427
+    },
+    "temporal": {
+      "sampleDate": "2022-12-12T12:35:16.978Z",
+      "analysisDate": "2023-03-11T05:45:19.752Z"
+    },
+    "chemicalId": {
+      "chemicalName": "LAMQXVJ",
+      "dtxsID": "DTXSID5303934",
+      "chemicalFormula": "RMUJXLM"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 552.3026374005713,
+      "retentionTime": 2.996551194926724,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 552933.2698277757,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 1356.7587682270675
+    }
+  },
+  {
+    "id": "ff8ab411-ee9e-46eb-ab05-ee1c946c9f0b",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 79,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Kent",
+      "state": "WA",
+      "lat": 47.372836681959406,
+      "long": -122.21009517495133
+    },
+    "temporal": {
+      "sampleDate": "2020-03-01T16:39:49.686Z",
+      "analysisDate": "2020-10-25T10:34:45.967Z"
+    },
+    "chemicalId": {
+      "chemicalName": "AWGKOE",
+      "dtxsID": "DTXSID6457843",
+      "chemicalFormula": "YXN6H0ZA"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 306.6059890319593,
+      "retentionTime": 3.812414850341156,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1408791.002073146,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 6822.905060032662
+    }
+  },
+  {
+    "id": "cbeeb869-5850-4c43-ad3d-4e6d15a44aa1",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 38,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Vancouver",
+      "state": "WA",
+      "lat": 45.63873323497331,
+      "long": -122.66154221788065
+    },
+    "temporal": {
+      "sampleDate": "2021-03-25T10:47:26.597Z",
+      "analysisDate": "2023-06-06T18:29:39.737Z"
+    },
+    "chemicalId": {
+      "chemicalName": "PGJSEXM",
+      "dtxsID": "DTXSID5256803",
+      "chemicalFormula": "RGFPFA17L"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 862.1211342699826,
+      "retentionTime": 5.390088820364326,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 867242.3875986214,
+      "units": "ng/ml",
+      "mrlOrDl": 7207.430554820178
+    }
+  },
+  {
+    "id": "9735cf75-1ca2-4302-9e8e-bad6402a6e42",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 35,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Gastonia",
+      "state": "NC",
+      "zipCode": "28052",
+      "lat": 35.263471069820206,
+      "long": -81.15827820121677
+    },
+    "temporal": {
+      "sampleDate": "2023-02-19T05:25:10.867Z",
+      "analysisDate": "2023-06-30T23:55:19.880Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ANOGK",
+      "dtxsID": "DTXSID3543383",
+      "chemicalFormula": "KJ38KZ8I"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 424.9173228046857,
+      "retentionTime": 7.895791380899027,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1497201.3617090415,
+      "units": "ng/g",
+      "mrlOrDl": 4241.519034222583
+    }
+  },
+  {
+    "id": "b1c76378-b03e-4a76-a6f9-d56ae234d022",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 72,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Chapel Hill",
+      "state": "NC",
+      "zipCode": "27514",
+      "lat": 35.92024201210877,
+      "long": -79.06196365594292
+    },
+    "temporal": {
+      "sampleDate": "2022-07-24T01:33:31.013Z",
+      "analysisDate": "2023-07-18T07:47:15.070Z"
+    },
+    "chemicalId": {
+      "chemicalName": "XENT",
+      "dtxsID": "DTXSID9357250",
+      "chemicalFormula": "MW7CWSP"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 183.24773489963263,
+      "retentionTime": 6.104981700191274,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 720914.3080661085,
+      "units": "ng/ml",
+      "mrlOrDl": 6205.472479422065
+    }
+  },
+  {
+    "id": "3d19f600-d32b-4398-8fcf-a1c03549bc3d",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 9,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Pasco",
+      "state": "WA",
+      "lat": 46.23962069631649,
+      "long": -119.10073272101607
+    },
+    "temporal": {
+      "sampleDate": "2020-12-02T11:58:37.200Z",
+      "analysisDate": "2023-07-07T10:39:04.982Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JNKPPZ",
+      "dtxsID": "DTXSID5753464",
+      "chemicalFormula": "HXUL4RGM"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 201.26069870311767,
+      "retentionTime": 8.438689525006339,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 1356638.035959719,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 9980.826860640267
+    }
+  },
+  {
+    "id": "02d3c2ac-3c71-406c-90c7-eef0b711d713",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 13,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Cary",
+      "state": "NC",
+      "zipCode": "27511",
+      "lat": 35.78346703237593,
+      "long": -78.79214391277088
+    },
+    "temporal": {
+      "sampleDate": "2021-08-10T19:17:02.037Z",
+      "analysisDate": "2021-08-21T01:03:29.948Z"
+    },
+    "chemicalId": {
+      "chemicalName": "RVYWJGGI",
+      "dtxsID": "DTXSID2117291",
+      "chemicalFormula": "MRNJI"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 256.46001955494285,
+      "retentionTime": 4.17234364640899,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 19851.967388596386,
+      "units": "ng/ml",
+      "mrlOrDl": 8245.439238046412
+    }
+  },
+  {
+    "id": "9ed00d91-49c0-4ea0-899a-abf8dc9dd32b",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 38,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Asheville",
+      "state": "NC",
+      "zipCode": "28801",
+      "lat": 35.59102819854405,
+      "long": -82.54157466131807
+    },
+    "temporal": {
+      "sampleDate": "2023-11-21T02:48:38.865Z",
+      "analysisDate": "2024-01-04T23:29:09.132Z"
+    },
+    "chemicalId": {
+      "chemicalName": "WJIFQMS",
+      "dtxsID": "DTXSID2961434",
+      "chemicalFormula": "Q6QOZX4"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 60.523838181979954,
+      "retentionTime": 3.1755606615915895,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1445233.6196714675,
+      "units": "ng/g",
+      "mrlOrDl": 716.7073521694168
+    }
+  },
+  {
+    "id": "47a4aae3-0256-4471-bb17-7185911f2550",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 53,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Vancouver",
+      "state": "WA",
+      "lat": 45.6349747535505,
+      "long": -122.67868856934581
+    },
+    "temporal": {
+      "sampleDate": "2022-05-28T15:43:10.489Z",
+      "analysisDate": "2023-01-11T08:54:59.472Z"
+    },
+    "chemicalId": {
+      "chemicalName": "OTVMO",
+      "dtxsID": "DTXSID4480709",
+      "chemicalFormula": "I0DE7Q4DIW"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 391.8086373875849,
+      "retentionTime": 6.866186935687438,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1032274.0587284148,
+      "units": "ng/L",
+      "mrlOrDl": 1259.5449605582978
+    }
+  },
+  {
+    "id": "19e93751-1f38-4167-b953-e6fd00867b2f",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 92,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Spokane",
+      "state": "WA",
+      "lat": 47.654286873578215,
+      "long": -117.43679905720029
+    },
+    "temporal": {
+      "sampleDate": "2020-12-03T03:58:29.113Z",
+      "analysisDate": "2023-10-04T16:34:07.318Z"
+    },
+    "chemicalId": {
+      "chemicalName": "DDCLWCAR",
+      "dtxsID": "DTXSID9656070",
+      "chemicalFormula": "LBMUQB"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 952.9959149891511,
+      "retentionTime": 2.7545993875246495,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1470474.2797669221,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 8536.19240473169
+    }
+  },
+  {
+    "id": "cf50c956-bba5-4ecd-a35c-42dab8294165",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 4,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zipCode": "27101",
+      "lat": 36.08431578076039,
+      "long": -80.25258140602159
+    },
+    "temporal": {
+      "sampleDate": "2022-04-24T20:46:13.141Z",
+      "analysisDate": "2023-06-11T00:00:46.404Z"
+    },
+    "chemicalId": {
+      "chemicalName": "BTNWBH",
+      "dtxsID": "DTXSID8786011",
+      "chemicalFormula": "5OPW9R"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 512.8790371143259,
+      "retentionTime": 9.708588092820719,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 853584.8319229833,
+      "units": "ng/ml",
+      "mrlOrDl": 1415.8978611385448
+    }
+  },
+  {
+    "id": "490a582b-fb52-4651-84b9-8bf1d5fef582",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 82,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Renton",
+      "state": "WA",
+      "lat": 47.480127578245536,
+      "long": -122.22359883814312
+    },
+    "temporal": {
+      "sampleDate": "2022-06-03T09:02:57.026Z",
+      "analysisDate": "2023-12-15T11:20:01.324Z"
+    },
+    "chemicalId": {
+      "chemicalName": "IBQOBYU",
+      "dtxsID": "DTXSID6631523",
+      "chemicalFormula": "VP5WXE3S5F"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 871.8327200552449,
+      "retentionTime": 9.335868504131213,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 812343.4339435049,
+      "units": "ng/ml",
+      "mrlOrDl": 8751.453139170912
+    }
+  },
+  {
+    "id": "da790293-389b-42c7-8521-8e9ed6bb718a",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 99,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Greenville",
+      "state": "NC",
+      "zipCode": "27834",
+      "lat": 35.60739789552755,
+      "long": -77.36682699121314
+    },
+    "temporal": {
+      "sampleDate": "2023-12-03T06:02:35.407Z",
+      "analysisDate": "2023-12-03T16:15:24.861Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JIFCJIDJ",
+      "dtxsID": "DTXSID5483294",
+      "chemicalFormula": "1Y9MPKIG9"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 260.1121380017139,
+      "retentionTime": 4.318097843090072,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1464362.3818898841,
+      "units": "ng/g",
+      "mrlOrDl": 6338.4254707491955
+    }
+  },
+  {
+    "id": "5d1ce542-c8fc-4c8c-bdf1-534b6b3aec72",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 44,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Charlotte",
+      "state": "NC",
+      "zipCode": "28201",
+      "lat": 35.22690212126757,
+      "long": -80.8423279604691
+    },
+    "temporal": {
+      "sampleDate": "2023-09-04T03:24:04.874Z",
+      "analysisDate": "2023-10-21T16:20:34.665Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JADFYRBV",
+      "dtxsID": "DTXSID7138250",
+      "chemicalFormula": "FJTVH9D28D"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 933.4847016679123,
+      "retentionTime": 6.738625018624589,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 779233.5327083897,
+      "units": "ng/ml",
+      "mrlOrDl": 4708.226952281455
+    }
+  },
+  {
+    "id": "bd91b0d7-1d62-4f32-bc9c-85ac7c88514c",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 23,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Asheville",
+      "state": "NC",
+      "zipCode": "28801",
+      "lat": 35.59146212318026,
+      "long": -82.53796581496078
+    },
+    "temporal": {
+      "sampleDate": "2022-11-21T08:58:42.466Z",
+      "analysisDate": "2023-04-16T02:12:54.074Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JCNWTKX",
+      "dtxsID": "DTXSID1529044",
+      "chemicalFormula": "XY4S0T"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 435.6975236488506,
+      "retentionTime": 6.681149990065023,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 405502.15856490657,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 2080.318494963483
+    }
+  },
+  {
+    "id": "307441b8-1002-40ba-adba-ac2c6b58d566",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 96,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Chapel Hill",
+      "state": "NC",
+      "zipCode": "27514",
+      "lat": 35.90101795283781,
+      "long": -79.04612776648435
+    },
+    "temporal": {
+      "sampleDate": "2022-03-13T06:05:19.215Z",
+      "analysisDate": "2023-12-06T23:11:41.754Z"
+    },
+    "chemicalId": {
+      "chemicalName": "SDXOL",
+      "dtxsID": "DTXSID2211710",
+      "chemicalFormula": "8WL0LTZH5Z"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 331.44848791416734,
+      "retentionTime": 8.116424691397697,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 962829.5173071837,
+      "units": "ng/g",
+      "mrlOrDl": 5765.778769328189
+    }
+  },
+  {
+    "id": "3a09418f-f94d-4f9e-8fc7-e1d27b889d54",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 50,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Everett",
+      "state": "WA",
+      "lat": 47.96395044827469,
+      "long": -122.21717719068079
+    },
+    "temporal": {
+      "sampleDate": "2023-04-12T10:22:23.764Z",
+      "analysisDate": "2023-11-09T23:43:10.850Z"
+    },
+    "chemicalId": {
+      "chemicalName": "TOKQEZV",
+      "dtxsID": "DTXSID7648079",
+      "chemicalFormula": "DFYDU"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 879.7063378291205,
+      "retentionTime": 3.144418196985498,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 390103.10451403726,
+      "units": "ng/L",
+      "mrlOrDl": 2638.9333579145605
+    }
+  },
+  {
+    "id": "1a9b954b-1af7-4151-aad4-5e24cf91e3cd",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 36,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Yakima",
+      "state": "WA",
+      "lat": 46.58867175911253,
+      "long": -120.49011778713344
+    },
+    "temporal": {
+      "sampleDate": "2021-12-02T23:42:50.088Z",
+      "analysisDate": "2022-09-06T10:13:34.277Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ERCH",
+      "dtxsID": "DTXSID2023152",
+      "chemicalFormula": "U6G343VV"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 724.0711684990674,
+      "retentionTime": 7.85619406751357,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1471646.054399258,
+      "units": "ng/L",
+      "mrlOrDl": 6900.230207347823
+    }
+  },
+  {
+    "id": "d2c2d250-eb87-41ba-beae-349f6187d855",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 5,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Durham",
+      "state": "NC",
+      "zipCode": "27701",
+      "lat": 35.982733212697255,
+      "long": -78.90403718507991
+    },
+    "temporal": {
+      "sampleDate": "2021-11-10T04:57:22.231Z",
+      "analysisDate": "2021-12-17T22:19:27.932Z"
+    },
+    "chemicalId": {
+      "chemicalName": "HIOJTCQY",
+      "dtxsID": "DTXSID7954280",
+      "chemicalFormula": "MJRBEVI"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 10.46739051118493,
+      "retentionTime": 8.910043165553361,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1168924.1432776651,
+      "units": "ng/L",
+      "mrlOrDl": 9265.312348704296
+    }
+  },
+  {
+    "id": "9adef19c-9b50-43cf-9f68-54f27fbf6732",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 67,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Cary",
+      "state": "NC",
+      "zipCode": "27511",
+      "lat": 35.810139014857356,
+      "long": -78.77645751823127
+    },
+    "temporal": {
+      "sampleDate": "2022-01-25T21:55:09.610Z",
+      "analysisDate": "2023-07-30T22:07:38.902Z"
+    },
+    "chemicalId": {
+      "chemicalName": "SKXL",
+      "dtxsID": "DTXSID8727857",
+      "chemicalFormula": "BX20N0"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 564.5843242458068,
+      "retentionTime": 3.8826765140984207,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 166932.84653508454,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 854.0808102503186
+    }
+  },
+  {
+    "id": "1ce2e859-3f0a-4c84-bb52-141454a61a4d",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 70,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Fayetteville",
+      "state": "NC",
+      "zipCode": "28301",
+      "lat": 35.049646911295525,
+      "long": -78.87845880664628
+    },
+    "temporal": {
+      "sampleDate": "2020-07-31T22:28:02.049Z",
+      "analysisDate": "2022-12-18T21:33:39.218Z"
+    },
+    "chemicalId": {
+      "chemicalName": "XSGJQC",
+      "dtxsID": "DTXSID8617863",
+      "chemicalFormula": "C3FGWSL"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 105.53614788688719,
+      "retentionTime": 3.2951931096613407,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 521666.67043049936,
+      "units": "ng/ml",
+      "mrlOrDl": 1670.4077405950518
+    }
+  },
+  {
+    "id": "f3932256-bcad-4e13-b676-b4b864d8044f",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 65,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Wilmington",
+      "state": "NC",
+      "zipCode": "28401",
+      "lat": 34.22213308470894,
+      "long": -77.86714700713242
+    },
+    "temporal": {
+      "sampleDate": "2022-12-22T02:31:07.262Z",
+      "analysisDate": "2023-03-10T18:48:06.101Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JNIIWQNL",
+      "dtxsID": "DTXSID5189682",
+      "chemicalFormula": "L4LGR9WA"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 705.6063599535264,
+      "retentionTime": 7.494800770655274,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 1056281.2902605312,
+      "units": "ng/L",
+      "mrlOrDl": 3637.816327726608
+    }
+  },
+  {
+    "id": "f5bb9143-7069-42d6-b37c-da8632388ccf",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 20,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Spokane",
+      "state": "WA",
+      "lat": 47.66554432436057,
+      "long": -117.42541117224948
+    },
+    "temporal": {
+      "sampleDate": "2020-12-23T08:09:38.125Z",
+      "analysisDate": "2021-06-06T16:26:45.662Z"
+    },
+    "chemicalId": {
+      "chemicalName": "UMSBWPGO",
+      "dtxsID": "DTXSID9581600",
+      "chemicalFormula": "3MT03"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 639.4849878107198,
+      "retentionTime": 8.19386855023913,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 869244.1959357669,
+      "units": "ng/g",
+      "mrlOrDl": 8321.272214299626
+    }
+  },
+  {
+    "id": "91d215bb-195a-4210-a36f-ddb4a6d14f03",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 76,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Jacksonville",
+      "state": "NC",
+      "zipCode": "28540",
+      "lat": 34.75283057522808,
+      "long": -77.43327991135197
+    },
+    "temporal": {
+      "sampleDate": "2020-03-11T17:21:20.682Z",
+      "analysisDate": "2021-02-10T04:27:07.277Z"
+    },
+    "chemicalId": {
+      "chemicalName": "LWECK",
+      "dtxsID": "DTXSID1335069",
+      "chemicalFormula": "3GZ6B20NG"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 821.1451313993894,
+      "retentionTime": 8.661352104740217,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 739054.9086617737,
+      "units": "ng/ml",
+      "mrlOrDl": 2220.288866523257
+    }
+  },
+  {
+    "id": "e7fc90bb-0759-43b7-ab3c-d8c0d3daa807",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 49,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Greenville",
+      "state": "NC",
+      "zipCode": "27834",
+      "lat": 35.59593790736494,
+      "long": -77.34484705421767
+    },
+    "temporal": {
+      "sampleDate": "2023-10-11T03:47:08.608Z",
+      "analysisDate": "2023-12-06T14:40:41.796Z"
+    },
+    "chemicalId": {
+      "chemicalName": "YUXXDJ",
+      "dtxsID": "DTXSID1465831",
+      "chemicalFormula": "Z0ZVKE"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 575.5013035633601,
+      "retentionTime": 6.022501455387101,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 895972.1984871826,
+      "units": "ng/g",
+      "mrlOrDl": 5948.09231112022
+    }
+  },
+  {
+    "id": "0e7389e4-b70d-4df6-825e-b2d5be03ab59",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 3,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zipCode": "27101",
+      "lat": 36.09754717839461,
+      "long": -80.23240582787167
+    },
+    "temporal": {
+      "sampleDate": "2021-05-21T06:34:37.680Z",
+      "analysisDate": "2024-01-22T03:01:16.654Z"
+    },
+    "chemicalId": {
+      "chemicalName": "FSCBUKLD",
+      "dtxsID": "DTXSID2135444",
+      "chemicalFormula": "5X2XHLB"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 766.1985164834186,
+      "retentionTime": 4.11693567270413,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1095015.2041640843,
+      "units": "ng/L",
+      "mrlOrDl": 4886.5093162629755
+    }
+  },
+  {
+    "id": "25a93aff-09d5-4db6-ba59-66e7eaabfbb9",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 66,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Redmond",
+      "state": "WA",
+      "lat": 47.66799237231624,
+      "long": -122.12318463092305
+    },
+    "temporal": {
+      "sampleDate": "2022-05-04T15:23:00.386Z",
+      "analysisDate": "2023-01-04T18:50:09.329Z"
+    },
+    "chemicalId": {
+      "chemicalName": "SPFG",
+      "dtxsID": "DTXSID6493384",
+      "chemicalFormula": "XM9WYJC"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 452.37720200326294,
+      "retentionTime": 1.490999985486269,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 16434.30875254562,
+      "units": "ng/L",
+      "mrlOrDl": 5200.278183571948
+    }
+  },
+  {
+    "id": "52d9f615-8faf-406f-a192-4e314a02929a",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 47,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Kent",
+      "state": "WA",
+      "lat": 47.40355933487829,
+      "long": -122.24717278121335
+    },
+    "temporal": {
+      "sampleDate": "2022-01-08T07:20:56.203Z",
+      "analysisDate": "2022-08-01T19:19:05.388Z"
+    },
+    "chemicalId": {
+      "chemicalName": "EJRWQPSE",
+      "dtxsID": "DTXSID1175491",
+      "chemicalFormula": "Q8LER2HV3D"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 549.752534031868,
+      "retentionTime": 3.3987159358803183,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1455265.302897665,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 4580.594209030736
+    }
+  },
+  {
+    "id": "1e8a4bfd-d70f-4e95-9021-7bbf4ba49b98",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 35,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Fayetteville",
+      "state": "NC",
+      "zipCode": "28301",
+      "lat": 35.0689653378567,
+      "long": -78.85783450049075
+    },
+    "temporal": {
+      "sampleDate": "2024-01-09T17:22:55.764Z",
+      "analysisDate": "2024-01-25T08:41:05.083Z"
+    },
+    "chemicalId": {
+      "chemicalName": "QMRXUYC",
+      "dtxsID": "DTXSID4469024",
+      "chemicalFormula": "S164BUZ9PM"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 378.5869931289926,
+      "retentionTime": 1.1838635210879147,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1213389.6274696104,
+      "units": "ng/ml",
+      "mrlOrDl": 938.4915727925021
+    }
+  },
+  {
+    "id": "5826bb30-3d2f-451b-b37d-3784d027527a",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 13,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Wilmington",
+      "state": "NC",
+      "zipCode": "28401",
+      "lat": 34.19019959991965,
+      "long": -77.88571822565984
+    },
+    "temporal": {
+      "sampleDate": "2020-01-08T21:26:59.064Z",
+      "analysisDate": "2022-12-16T19:41:12.918Z"
+    },
+    "chemicalId": {
+      "chemicalName": "VFAYEPBF",
+      "dtxsID": "DTXSID8837080",
+      "chemicalFormula": "HNARA"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 619.5537326158956,
+      "retentionTime": 5.383913092780858,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 407498.3531411155,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 1794.0714455843436
+    }
+  },
+  {
+    "id": "f8f0a652-85bb-4120-822f-eb78377113b8",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 78,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Raleigh",
+      "state": "NC",
+      "zipCode": "27601",
+      "lat": 35.7800804654979,
+      "long": -78.63965397658455
+    },
+    "temporal": {
+      "sampleDate": "2021-12-15T18:56:10.134Z",
+      "analysisDate": "2023-03-12T01:03:28.443Z"
+    },
+    "chemicalId": {
+      "chemicalName": "OTUEGXMC",
+      "dtxsID": "DTXSID9802856",
+      "chemicalFormula": "94NW0G8VK"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 816.0959710180759,
+      "retentionTime": 3.7602638914249837,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 1011182.2138334031,
+      "units": "ng/g",
+      "mrlOrDl": 7145.98491793503
+    }
+  },
+  {
+    "id": "97e6d263-d2fe-4687-bfef-aea941ca2679",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 91,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Pasco",
+      "state": "WA",
+      "lat": 46.23883254493173,
+      "long": -119.10053586783113
+    },
+    "temporal": {
+      "sampleDate": "2021-12-28T16:56:42.513Z",
+      "analysisDate": "2023-01-19T23:39:02.533Z"
+    },
+    "chemicalId": {
+      "chemicalName": "NSZWXXFJ",
+      "dtxsID": "DTXSID6838475",
+      "chemicalFormula": "DFPKAC7WC"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 78.84159222943708,
+      "retentionTime": 9.030871933326125,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1057716.6657885443,
+      "units": "ng/L",
+      "mrlOrDl": 8126.679996327986
+    }
+  },
+  {
+    "id": "11b43ac8-9c51-4e69-ad9a-2cff7bbf37a4",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 53,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Durham",
+      "state": "NC",
+      "zipCode": "27701",
+      "lat": 35.991628374135765,
+      "long": -78.91007967342523
+    },
+    "temporal": {
+      "sampleDate": "2021-08-27T04:58:06.980Z",
+      "analysisDate": "2022-10-12T11:49:34.270Z"
+    },
+    "chemicalId": {
+      "chemicalName": "GHEDALI",
+      "dtxsID": "DTXSID9214044",
+      "chemicalFormula": "6ELQ8O0LT"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 61.66668121702969,
+      "retentionTime": 1.5093261953443289,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 362910.9336192347,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 4610.198059246317
+    }
+  },
+  {
+    "id": "0fd8cd26-f1e8-4d89-a36c-ecf5cb4b77f7",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 47,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Spokane",
+      "state": "WA",
+      "lat": 47.66037240607783,
+      "long": -117.40814117875965
+    },
+    "temporal": {
+      "sampleDate": "2023-04-17T21:53:19.965Z",
+      "analysisDate": "2023-04-22T06:51:09.203Z"
+    },
+    "chemicalId": {
+      "chemicalName": "IIGIFRF",
+      "dtxsID": "DTXSID1097975",
+      "chemicalFormula": "VM0A1V6K"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 763.6083027115092,
+      "retentionTime": 5.244344983715564,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 457994.344407639,
+      "units": "ng/L",
+      "mrlOrDl": 2371.5454370028106
+    }
+  },
+  {
+    "id": "061edcf3-5496-44f5-b957-e57aa180ba2a",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 79,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Renton",
+      "state": "WA",
+      "lat": 47.48177589704716,
+      "long": -122.21072386562344
+    },
+    "temporal": {
+      "sampleDate": "2022-01-16T01:54:43.997Z",
+      "analysisDate": "2022-08-11T01:39:38.939Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ICEAWN",
+      "dtxsID": "DTXSID5591061",
+      "chemicalFormula": "1WHBYC"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 446.80321177234873,
+      "retentionTime": 1.841637165285647,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 349609.3498982873,
+      "units": "ng/L",
+      "mrlOrDl": 3340.3065997441063
+    }
+  },
+  {
+    "id": "3a14b52a-4c87-4953-92cb-55aeaeaeed00",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 60,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Kent",
+      "state": "WA",
+      "lat": 47.37924101370726,
+      "long": -122.23600545197479
+    },
+    "temporal": {
+      "sampleDate": "2021-08-05T16:06:34.540Z",
+      "analysisDate": "2022-04-19T08:08:17.135Z"
+    },
+    "chemicalId": {
+      "chemicalName": "YNWBXJ",
+      "dtxsID": "DTXSID2276063",
+      "chemicalFormula": "6IXDI"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 730.0549635337666,
+      "retentionTime": 4.257869629655033,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 312393.7257310306,
+      "units": "ng/L",
+      "mrlOrDl": 9685.36214989794
+    }
+  },
+  {
+    "id": "713c12f3-bcf4-4460-ad78-dc78ee5e47b9",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 53,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Bellevue",
+      "state": "WA",
+      "lat": 47.59616436768792,
+      "long": -122.19513095838317
+    },
+    "temporal": {
+      "sampleDate": "2023-08-31T19:25:39.489Z",
+      "analysisDate": "2024-01-19T19:18:03.450Z"
+    },
+    "chemicalId": {
+      "chemicalName": "MGNSPJ",
+      "dtxsID": "DTXSID1289366",
+      "chemicalFormula": "YHVXLXDA4"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 678.4798636613414,
+      "retentionTime": 2.8785762095358223,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 356539.03276646277,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 5603.915933114733
+    }
+  },
+  {
+    "id": "d9fe875c-7144-4730-b8d8-6cb6ea02539b",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 40,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Bellingham",
+      "state": "WA",
+      "lat": 48.770064609696384,
+      "long": -122.49945525428745
+    },
+    "temporal": {
+      "sampleDate": "2023-07-03T15:50:46.602Z",
+      "analysisDate": "2023-07-05T13:24:11.393Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ZMPG",
+      "dtxsID": "DTXSID8870745",
+      "chemicalFormula": "DQBLOKP"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 87.3193232063204,
+      "retentionTime": 5.0192353304009885,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 649643.2984064624,
+      "units": "ng/g",
+      "mrlOrDl": 1959.9859764394582
+    }
+  },
+  {
+    "id": "b32da63f-36be-46e3-be8b-4822022b7132",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 19,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Burlington",
+      "state": "NC",
+      "zipCode": "27215",
+      "lat": 36.099881332616114,
+      "long": -79.4378738653752
+    },
+    "temporal": {
+      "sampleDate": "2021-03-22T10:56:29.257Z",
+      "analysisDate": "2021-06-24T05:54:29.303Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ULPBEU",
+      "dtxsID": "DTXSID2428934",
+      "chemicalFormula": "PKHEU4UV"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 770.2273578080349,
+      "retentionTime": 4.5283994185738266,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 176066.1436101806,
+      "units": "ng/ml",
+      "mrlOrDl": 8831.110602225968
+    }
+  },
+  {
+    "id": "9372ec39-b972-4eb0-8c58-9c36ef1b22a0",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 13,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Chapel Hill",
+      "state": "NC",
+      "zipCode": "27514",
+      "lat": 35.89965633273662,
+      "long": -79.04818937800866
+    },
+    "temporal": {
+      "sampleDate": "2020-02-04T20:45:59.024Z",
+      "analysisDate": "2023-04-27T14:23:37.203Z"
+    },
+    "chemicalId": {
+      "chemicalName": "DARMM",
+      "dtxsID": "DTXSID8720431",
+      "chemicalFormula": "I9ZB5BN"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 761.6532226861455,
+      "retentionTime": 9.276791092474014,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1215392.7105502808,
+      "units": "ng/ml",
+      "mrlOrDl": 6845.34041046924
+    }
+  },
+  {
+    "id": "e2a043ed-ecd5-48de-8b3c-fc357f1a5ad2",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 98,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Kannapolis",
+      "state": "NC",
+      "zipCode": "28081",
+      "lat": 35.46847583761292,
+      "long": -80.60138937622332
+    },
+    "temporal": {
+      "sampleDate": "2021-12-29T00:01:58.352Z",
+      "analysisDate": "2023-12-15T04:13:39.819Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JANGD",
+      "dtxsID": "DTXSID3101598",
+      "chemicalFormula": "Q1NL54"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 460.0152092776261,
+      "retentionTime": 9.015573545591906,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1077144.967589674,
+      "units": "ng/g",
+      "mrlOrDl": 1658.2542608571703
+    }
+  },
+  {
+    "id": "8ed38a59-3df7-4c2f-90cd-d93f66ed7a7d",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 14,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Tacoma",
+      "state": "WA",
+      "lat": 47.25754659724896,
+      "long": -122.42088251844353
+    },
+    "temporal": {
+      "sampleDate": "2023-04-18T07:37:06.659Z",
+      "analysisDate": "2023-12-29T07:36:12.503Z"
+    },
+    "chemicalId": {
+      "chemicalName": "CFIVIJ",
+      "dtxsID": "DTXSID6710332",
+      "chemicalFormula": "60LEARCBZD"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 857.9759740899317,
+      "retentionTime": 9.360641164472327,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 327732.3806874687,
+      "units": "ng/g",
+      "mrlOrDl": 2688.999934634636
+    }
+  },
+  {
+    "id": "d2427fd4-86e1-4c13-af98-5ceb09d1da1a",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 58,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Kent",
+      "state": "WA",
+      "lat": 47.40540411951231,
+      "long": -122.2342707187388
+    },
+    "temporal": {
+      "sampleDate": "2020-05-15T11:42:20.975Z",
+      "analysisDate": "2020-10-07T23:47:24.668Z"
+    },
+    "chemicalId": {
+      "chemicalName": "GIMWI",
+      "dtxsID": "DTXSID8151711",
+      "chemicalFormula": "I6WULB"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 143.8959430065006,
+      "retentionTime": 6.735889004077762,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 293143.6662529304,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 1863.3870171292917
+    }
+  },
+  {
+    "id": "57abd277-ca3e-447c-b513-2d27bc3a3e8b",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Serum",
+      "sampleCount": 64,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Kannapolis",
+      "state": "NC",
+      "zipCode": "28081",
+      "lat": 35.4791122568965,
+      "long": -80.63284555201784
+    },
+    "temporal": {
+      "sampleDate": "2020-12-14T13:07:41.609Z",
+      "analysisDate": "2022-06-21T10:10:08.095Z"
+    },
+    "chemicalId": {
+      "chemicalName": "AXZZ",
+      "dtxsID": "DTXSID9526359",
+      "chemicalFormula": "4FCPV44NW"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 270.62461499124765,
+      "retentionTime": 4.612269236240536,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 39693.72579098097,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 2756.427289496665
+    }
+  },
+  {
+    "id": "c920cf31-1a05-498b-884e-c5634b1dde2a",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Serum",
+      "sampleCount": 7,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Wilmington",
+      "state": "NC",
+      "zipCode": "28401",
+      "lat": 34.21117353692386,
+      "long": -77.89066352386658
+    },
+    "temporal": {
+      "sampleDate": "2020-07-18T03:09:56.761Z",
+      "analysisDate": "2021-05-13T04:15:59.744Z"
+    },
+    "chemicalId": {
+      "chemicalName": "RKJEPPU",
+      "dtxsID": "DTXSID1197804",
+      "chemicalFormula": "48GE302E"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 704.047934343107,
+      "retentionTime": 7.994078964693472,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 911713.2309520431,
+      "units": "ng/g",
+      "mrlOrDl": 7644.96234923331
+    }
+  },
+  {
+    "id": "6c1ec94d-d836-410e-a891-2c25e60b85bc",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 80,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Wilson",
+      "state": "NC",
+      "zipCode": "27893",
+      "lat": 35.706423013958485,
+      "long": -77.91086700299911
+    },
+    "temporal": {
+      "sampleDate": "2020-04-29T23:26:29.287Z",
+      "analysisDate": "2023-06-18T15:54:59.055Z"
+    },
+    "chemicalId": {
+      "chemicalName": "RLGOLJ",
+      "dtxsID": "DTXSID9171913",
+      "chemicalFormula": "A6I3BFIMM"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 671.2539014429785,
+      "retentionTime": 6.975718471687287,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1051680.361250264,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 2615.72707800162
+    }
+  },
+  {
+    "id": "057f2c5d-21e0-4669-9fc1-d715438fba2b",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 2,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Rocky Mount",
+      "state": "NC",
+      "zipCode": "27801",
+      "lat": 35.92597753229631,
+      "long": -77.78111238524701
+    },
+    "temporal": {
+      "sampleDate": "2020-12-14T20:53:14.575Z",
+      "analysisDate": "2021-12-10T20:37:36.485Z"
+    },
+    "chemicalId": {
+      "chemicalName": "XYCAAI",
+      "dtxsID": "DTXSID2145732",
+      "chemicalFormula": "9RQK1HC65"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 279.9014793615788,
+      "retentionTime": 5.481498019536957,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 238152.12326079956,
+      "units": "ng/ml",
+      "mrlOrDl": 6625.34188058041
+    }
+  },
+  {
+    "id": "3e786c64-bd79-4a6d-988c-ae7110cf39db",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Water",
+      "sampleCount": 74,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Spokane Valley",
+      "state": "WA",
+      "lat": 47.6898515139598,
+      "long": -117.22027187708215
+    },
+    "temporal": {
+      "sampleDate": "2023-09-13T19:26:57.586Z",
+      "analysisDate": "2023-09-13T21:37:07.493Z"
+    },
+    "chemicalId": {
+      "chemicalName": "BCZBO",
+      "dtxsID": "DTXSID7736869",
+      "chemicalFormula": "LTG8ALC88M"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 60.2642346941866,
+      "retentionTime": 6.00625971169211,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 89675.8525758679,
+      "units": "ng/L",
+      "mrlOrDl": 8319.351702001086
+    }
+  },
+  {
+    "id": "aeb76a78-00e6-4bd0-b86f-165996cd8a52",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 72,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Rocky Mount",
+      "state": "NC",
+      "zipCode": "27801",
+      "lat": 35.92808246029911,
+      "long": -77.77085090487367
+    },
+    "temporal": {
+      "sampleDate": "2020-10-05T01:35:37.214Z",
+      "analysisDate": "2023-07-05T23:41:43.121Z"
+    },
+    "chemicalId": {
+      "chemicalName": "MOZIM",
+      "dtxsID": "DTXSID6428262",
+      "chemicalFormula": "P79RHR4B"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 616.7844418087043,
+      "retentionTime": 5.760719892336056,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 535662.7316298243,
+      "units": "ng/ml",
+      "mrlOrDl": 3247.324446706776
+    }
+  },
+  {
+    "id": "cdb9608c-ae7d-49a2-86c0-252c4ee6c0e9",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 98,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Auburn",
+      "state": "WA",
+      "lat": 47.3269061007602,
+      "long": -122.22338107582533
+    },
+    "temporal": {
+      "sampleDate": "2022-09-22T12:54:33.358Z",
+      "analysisDate": "2023-03-21T02:46:32.914Z"
+    },
+    "chemicalId": {
+      "chemicalName": "AYHRCOGM",
+      "dtxsID": "DTXSID9104940",
+      "chemicalFormula": "SSWZW31"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 387.51887479331344,
+      "retentionTime": 7.395601210650057,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1171502.204140022,
+      "units": "ng/g",
+      "mrlOrDl": 1070.3130674009908
+    }
+  },
+  {
+    "id": "d645111c-c5cc-4a97-9fa1-892699d8403b",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 47,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Wilmington",
+      "state": "NC",
+      "zipCode": "28401",
+      "lat": 34.2252208698248,
+      "long": -77.90209112215427
+    },
+    "temporal": {
+      "sampleDate": "2020-06-24T06:16:29.250Z",
+      "analysisDate": "2023-08-22T12:51:04.685Z"
+    },
+    "chemicalId": {
+      "chemicalName": "RZPSMZNE",
+      "dtxsID": "DTXSID2971946",
+      "chemicalFormula": "FNX9Z"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 676.6358394315466,
+      "retentionTime": 7.016769288806245,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 523331.5891996538,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 3585.8660837888947
+    }
+  },
+  {
+    "id": "94089357-38f1-464e-8af2-a2a9234c33ee",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 16,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Fayetteville",
+      "state": "NC",
+      "zipCode": "28301",
+      "lat": 35.063617282791846,
+      "long": -78.8938219276015
+    },
+    "temporal": {
+      "sampleDate": "2022-02-16T22:17:43.240Z",
+      "analysisDate": "2022-12-08T05:09:52.990Z"
+    },
+    "chemicalId": {
+      "chemicalName": "XGFQTHCZ",
+      "dtxsID": "DTXSID2786965",
+      "chemicalFormula": "EWRFT"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 309.619929487817,
+      "retentionTime": 9.371386464685202,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1274504.8630342097,
+      "units": "ng/ml",
+      "mrlOrDl": 1330.2878302116876
+    }
+  },
+  {
+    "id": "a1f1f3eb-652e-49c9-88ed-b83c0071bc9b",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Water",
+      "sampleCount": 64,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Seattle",
+      "state": "WA",
+      "lat": 47.60901606525063,
+      "long": -122.33318494451078
+    },
+    "temporal": {
+      "sampleDate": "2022-03-14T22:32:53.361Z",
+      "analysisDate": "2023-03-09T07:23:50.438Z"
+    },
+    "chemicalId": {
+      "chemicalName": "XIUVKIQD",
+      "dtxsID": "DTXSID8763894",
+      "chemicalFormula": "E8SJ0"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 443.74050232348964,
+      "retentionTime": 7.586348526878282,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 151407.12942740414,
+      "units": "ng/g",
+      "mrlOrDl": 5285.299652457004
+    }
+  },
+  {
+    "id": "fe526b3f-a435-4c93-95a3-bacf5f0a16bb",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 61,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Kennewick",
+      "state": "WA",
+      "lat": 46.22606501243029,
+      "long": -119.13962993579821
+    },
+    "temporal": {
+      "sampleDate": "2024-01-25T17:57:25.167Z",
+      "analysisDate": "2024-01-26T01:32:08.845Z"
+    },
+    "chemicalId": {
+      "chemicalName": "DDKSIG",
+      "dtxsID": "DTXSID8699639",
+      "chemicalFormula": "RXNTDG"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 874.6592542738654,
+      "retentionTime": 3.0439100877847522,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1361172.5861060666,
+      "units": "ng/g",
+      "mrlOrDl": 1784.3632638546637
+    }
+  },
+  {
+    "id": "da65d4b4-e69d-4f32-8bfe-2836866bc200",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 74,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Cary",
+      "state": "NC",
+      "zipCode": "27511",
+      "lat": 35.77734952472213,
+      "long": -78.75639801744933
+    },
+    "temporal": {
+      "sampleDate": "2021-01-18T13:42:07.517Z",
+      "analysisDate": "2023-07-05T10:10:10.848Z"
+    },
+    "chemicalId": {
+      "chemicalName": "BXLMJ",
+      "dtxsID": "DTXSID6397896",
+      "chemicalFormula": "M0SSME"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 683.2698320015334,
+      "retentionTime": 8.229355600429699,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 1296238.940830034,
+      "units": "ng/g",
+      "mrlOrDl": 7584.6616572303
+    }
+  },
+  {
+    "id": "75fa03d5-7042-4a69-ad56-6339a42b4d27",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 80,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "High Point",
+      "state": "NC",
+      "zipCode": "27260",
+      "lat": 35.93688848154617,
+      "long": -79.986372136088
+    },
+    "temporal": {
+      "sampleDate": "2023-01-26T23:31:45.404Z",
+      "analysisDate": "2023-04-22T06:12:51.773Z"
+    },
+    "chemicalId": {
+      "chemicalName": "LZCS",
+      "dtxsID": "DTXSID8318980",
+      "chemicalFormula": "SMMZAUC34"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 72.07517883274704,
+      "retentionTime": 3.0518153603188694,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 1073053.1292338541,
+      "units": "ng/ml",
+      "mrlOrDl": 679.9468182118377
+    }
+  },
+  {
+    "id": "73e686f8-3207-4fb1-8711-823c91af02d9",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Serum",
+      "sampleCount": 20,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Kent",
+      "state": "WA",
+      "lat": 47.37751194770284,
+      "long": -122.23231802102293
+    },
+    "temporal": {
+      "sampleDate": "2020-06-15T05:16:12.674Z",
+      "analysisDate": "2023-01-23T10:09:33.304Z"
+    },
+    "chemicalId": {
+      "chemicalName": "DJPSAIBW",
+      "dtxsID": "DTXSID7634561",
+      "chemicalFormula": "9XUW823MNL"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 980.81302002538,
+      "retentionTime": 9.630240740254521,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 1417079.2206758808,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 562.5961435638834
+    }
+  },
+  {
+    "id": "b5eb4e80-061e-4e3d-acc4-36d8739f6346",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Water",
+      "sampleCount": 40,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Renton",
+      "state": "WA",
+      "lat": 47.45776985194298,
+      "long": -122.21929967972835
+    },
+    "temporal": {
+      "sampleDate": "2021-01-23T10:50:49.534Z",
+      "analysisDate": "2022-03-24T04:27:20.839Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ERIA",
+      "dtxsID": "DTXSID1106622",
+      "chemicalFormula": "QI5DBX"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 872.9554595984519,
+      "retentionTime": 1.630619513336569,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1006088.3760773134,
+      "units": "ng/ml",
+      "mrlOrDl": 8581.072407096042
+    }
+  },
+  {
+    "id": "aa168cb2-a048-4cee-97a7-9caacfd48156",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 6,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Kannapolis",
+      "state": "NC",
+      "zipCode": "28081",
+      "lat": 35.47557995407127,
+      "long": -80.62683242870798
+    },
+    "temporal": {
+      "sampleDate": "2020-04-26T10:25:23.637Z",
+      "analysisDate": "2020-06-25T02:45:22.779Z"
+    },
+    "chemicalId": {
+      "chemicalName": "QHJHFR",
+      "dtxsID": "DTXSID5760388",
+      "chemicalFormula": "ZYTO46"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 590.1598880975507,
+      "retentionTime": 7.186995153781027,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 1436292.3216721253,
+      "units": "ng/ml",
+      "mrlOrDl": 484.2549078694312
+    }
+  },
+  {
+    "id": "aa16f8dc-d966-4ff1-b9c9-cd2dc8ff0930",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Dust",
+      "sampleCount": 97,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Kent",
+      "state": "WA",
+      "lat": 47.4007638742213,
+      "long": -122.22542137134337
+    },
+    "temporal": {
+      "sampleDate": "2021-02-17T18:49:10.979Z",
+      "analysisDate": "2022-08-17T12:25:36.809Z"
+    },
+    "chemicalId": {
+      "chemicalName": "UVKBHI",
+      "dtxsID": "DTXSID2342506",
+      "chemicalFormula": "UJO9NY0"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 719.9354637553915,
+      "retentionTime": 9.744078946299851,
+      "idConfidenceLevel": "2a (library spectrum match)"
+    },
+    "quantitation": {
+      "abundance": 668902.2266070475,
+      "units": "Instrument Abundance",
+      "mrlOrDl": 1552.491258216556
+    }
+  },
+  {
+    "id": "2496d5d3-6bd9-41a0-b334-ea2c5d687852",
+    "study": {
+      "dataset": "KITTY",
+      "medium": "Dust",
+      "sampleCount": 18,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Bellingham",
+      "state": "WA",
+      "lat": 48.75544203830704,
+      "long": -122.48062167887383
+    },
+    "temporal": {
+      "sampleDate": "2020-06-26T13:28:59.945Z",
+      "analysisDate": "2023-10-03T08:29:32.016Z"
+    },
+    "chemicalId": {
+      "chemicalName": "SLERAB",
+      "dtxsID": "DTXSID2227962",
+      "chemicalFormula": "ZETF0Q1F6J"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 579.7020652866922,
+      "retentionTime": 3.1629602764733136,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 1271833.2807004638,
+      "units": "ng/L",
+      "mrlOrDl": 1381.0201701863668
+    }
+  },
+  {
+    "id": "c9b97c46-7525-4191-be0a-2c5ad6942078",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 68,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Kannapolis",
+      "state": "NC",
+      "zipCode": "28081",
+      "lat": 35.47268009634427,
+      "long": -80.63321548238258
+    },
+    "temporal": {
+      "sampleDate": "2023-04-03T23:19:17.144Z",
+      "analysisDate": "2023-08-01T10:51:47.028Z"
+    },
+    "chemicalId": {
+      "chemicalName": "ZXWYUOQ",
+      "dtxsID": "DTXSID8764058",
+      "chemicalFormula": "EP9ZDCI"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 364.77283731102943,
+      "retentionTime": 5.8027500049211085,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 880670.0549792545,
+      "units": "ng/g",
+      "mrlOrDl": 7414.391476696124
+    }
+  },
+  {
+    "id": "7b26f811-4651-4ad8-b876-f3cf38f81bda",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 68,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Renton",
+      "state": "WA",
+      "lat": 47.50364730904475,
+      "long": -122.21977370676325
+    },
+    "temporal": {
+      "sampleDate": "2020-07-12T18:02:59.540Z",
+      "analysisDate": "2022-03-12T16:39:30.730Z"
+    },
+    "chemicalId": {
+      "chemicalName": "JZWYQAOU",
+      "dtxsID": "DTXSID4522460",
+      "chemicalFormula": "PPPIG6KC"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 606.2909727334045,
+      "retentionTime": 5.012488742824644,
+      "idConfidenceLevel": "1"
+    },
+    "quantitation": {
+      "abundance": 964621.6942462907,
+      "units": "ng/L",
+      "mrlOrDl": 9606.56427035688
+    }
+  },
+  {
+    "id": "c82d47b0-96b0-42ec-aab3-8632b3757910",
+    "study": {
+      "dataset": "DRAMA",
+      "medium": "Serum",
+      "sampleCount": 11,
+      "targetOrNta": "NTA"
+    },
+    "location": {
+      "city": "Redmond",
+      "state": "WA",
+      "lat": 47.65845953460088,
+      "long": -122.11405908796752
+    },
+    "temporal": {
+      "sampleDate": "2021-01-01T06:20:11.847Z",
+      "analysisDate": "2022-08-02T19:35:39.659Z"
+    },
+    "chemicalId": {
+      "chemicalName": "WDOYBJJH",
+      "dtxsID": "DTXSID4421845",
+      "chemicalFormula": "CIC6G4C59"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 19.42142852116376,
+      "retentionTime": 9.904373777331784,
+      "idConfidenceLevel": "4 (known formula"
+    },
+    "quantitation": {
+      "abundance": 796969.6334349748,
+      "units": "ng/g",
+      "mrlOrDl": 8049.014069849067
+    }
+  },
+  {
+    "id": "a1e72500-99a3-4712-ab5e-5482dc87ab3c",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Serum",
+      "sampleCount": 27,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Wilmington",
+      "state": "NC",
+      "zipCode": "28401",
+      "lat": 34.2295896568987,
+      "long": -77.87756779185622
+    },
+    "temporal": {
+      "sampleDate": "2020-11-09T21:43:02.097Z",
+      "analysisDate": "2022-02-13T19:15:05.062Z"
+    },
+    "chemicalId": {
+      "chemicalName": "NTIVNMM",
+      "dtxsID": "DTXSID3482739",
+      "chemicalFormula": "CDZ6P9E9H"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 895.3677467536181,
+      "retentionTime": 6.8078047630842775,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 53570.06098298356,
+      "units": "ng/ml",
+      "mrlOrDl": 5020.931982780225
+    }
+  },
+  {
+    "id": "8b6ad962-31cc-4de5-97b8-fbddd54d409e",
+    "study": {
+      "dataset": "FAN",
+      "medium": "Dust",
+      "sampleCount": 16,
+      "targetOrNta": "Target"
+    },
+    "location": {
+      "city": "Jacksonville",
+      "state": "NC",
+      "zipCode": "28540",
+      "lat": 34.75854552463887,
+      "long": -77.41638141962977
+    },
+    "temporal": {
+      "sampleDate": "2022-12-31T19:27:36.277Z",
+      "analysisDate": "2023-08-21T08:41:14.279Z"
+    },
+    "chemicalId": {
+      "chemicalName": "WLSGZ",
+      "dtxsID": "DTXSID5260982",
+      "chemicalFormula": "EO15KC"
+    },
+    "nontargetedChemicalId": {
+      "molecularMass": 589.9856970203109,
+      "retentionTime": 9.137160584330559,
+      "idConfidenceLevel": "2b (de novo spectral assignment, single structure matches)"
+    },
+    "quantitation": {
+      "abundance": 99339.76426251698,
+      "units": "ng/ml",
+      "mrlOrDl": 4665.788536641957
+    }
+  }
+]

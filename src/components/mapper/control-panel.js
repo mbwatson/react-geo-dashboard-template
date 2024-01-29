@@ -10,7 +10,6 @@ import {
 import {
   Add as AddIcon,
 } from '@mui/icons-material'
-import { BaseMapSelect } from './base-map-select'
 import { LocationSelect } from './location-select'
 
 export const ControlPanel = () => {
@@ -49,11 +48,6 @@ export const ControlPanel = () => {
           <LocationSelect />
         </ListItem>
         
-        <ListDivider />
-
-        <ListItem role="none">
-          <BaseMapSelect />
-        </ListItem>
       </List>
 
     </Card>

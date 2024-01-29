@@ -1,34 +1,105 @@
+import { Grid } from '@mui/joy'
 import { ContentPage } from '@components/layout'
-import { Card, CardContent, Divider, Grid, Typography } from '@mui/joy'
 import { useAppContext } from '@context'
+import { DashboardCard } from '@components/dashboard-card'
+import { Mapper } from '@components/mapper'
+import { Layer, Source } from 'react-map-gl'
 
-const Item = () => {
-  const { loadSomething, preferences } = useAppContext()
+const Counts = () => {
+  const { data } = useAppContext()
+  const counts = data.sample.data.reduce((acc, d) => {
+    if (d.study.dataset in acc) {
+      acc[d.study.dataset] += 1
+      return acc
+    }
+    acc[d.study.dataset] = 1
+    return acc
+  }, {})
+  
+  return (
+    <DashboardCard title="Datasets">
+      <pre>{
+        JSON.stringify(counts, null, 2)
+      }</pre>
+    </DashboardCard>
+  )
+}
+
+const SamplesByMedium = () => {
+  const { data } = useAppContext()
+  const counts = data.sample.data.reduce((acc, d) => {
+    if (d.study.medium in acc) {
+      acc[d.study.medium] += d.study.sampleCount
+      return acc
+    }
+    acc[d.study.medium] = d.study.sampleCount
+    return acc
+  }, {})
+  
+  return (
+    <DashboardCard title="Samples by Medium">
+      <pre>{
+        JSON.stringify(counts, null, 2)
+      }</pre>
+    </DashboardCard>
+  )
+}
+
+const SampleLocationCounts = () => {
+  const { data } = useAppContext()
+  const counts = data.sample.data.reduce((acc, d) => {
+    const locationKey = `${ d.location.city }, ${ d.location.state }`
+    if (locationKey in acc) {
+      acc[locationKey] += 1
+      return acc
+    }
+    acc[locationKey] = 1
+    return acc
+  }, {})
+  
+  return (
+    <DashboardCard title="Sampled Locations">
+      <pre>{
+        JSON.stringify(counts, null, 2)
+      }</pre>
+    </DashboardCard>
+  )
+}
+
+const SampleLocationsMap = () => {
+  const { data } = useAppContext()
+
+  const geojson = {
+    type: 'FeatureCollection',
+    features: data.sample.data.map(({ location }) => ({
+      type: 'Feature', geometry: { type: 'Point', coordinates: [location.long, location.lat] }
+    })),
+  }
+
+  const layerStyle = {
+    id: 'point',
+    type: 'circle',
+    paint: {
+      'circle-radius': 10,
+      'circle-color': '#007abc'
+    }
+  }
 
   return (
-    <Card
-      onClick={ loadSomething }
-      sx={{
-        p: 1,
-        textAlign: 'center',
-        borderRadius: 'sm',
-        height: '400px',
-        border: '1px solid',
-        borderColor: preferences.colorMode.light ? 'primary.200' : 'primaryDark.700',
-        backgroundColor: preferences.colorMode.light ? 'primary.100' : 'primaryDark.800',
-        transition: 'border-color 250ms',
-        '&:hover': {
-          borderColor: preferences.colorMode.light ? 'primary.500' : 'primaryDark.400',
-          cursor: 'pointer',
-        }
-      }}
-    >
-      <Typography level="title-lg">Lorem Ipsum</Typography>
-      <Divider />
-      <CardContent>
-        ...
-      </CardContent>
-    </Card>
+    <DashboardCard title="Sample Locations">
+      <Mapper showViewState={ false } height={ 500 }>
+        <Source
+          id="samples"
+          type="geojson"
+          data={ geojson }
+          cluster={ true }
+          clusterMaxZoom={ 14 }
+          clusterRadius={ 50 }
+        >
+          <Layer { ...layerStyle } />
+        </Source>
+      </Mapper>
+    </DashboardCard>
   )
 }
 
@@ -37,31 +108,41 @@ export const HomeView = () => {
     <ContentPage>
       <Grid container spacing={2} sx={{ flexGrow: 1 }}>
         <Grid xs={ 12 } sm={ 8 }>
-          <Item />
+          <SamplesByMedium />
         </Grid>
         <Grid xs={ 12 } sm={ 4 }>
-          <Item />
+          <Counts />
         </Grid>
         <Grid xs={ 12 } sm={ 4 }>
-          <Item />
-        </Grid>
-        <Grid xs={ 12 } sm={ 4 }>
-          <Item />
-        </Grid>
-        <Grid xs={ 12 } sm={ 4 }>
-          <Item />
-        </Grid>
-        <Grid xs={ 12 } sm={ 4 }>
-          <Item />
+          <SampleLocationCounts />
         </Grid>
         <Grid xs={ 12 } sm={ 8 }>
-          <Item />
-        </Grid>
-        <Grid xs={ 12 } sm={ 8 }>
-          <Item />
+          <SampleLocationsMap />
         </Grid>
         <Grid xs={ 12 } sm={ 4 }>
-          <Item />
+          <DashboardCard title="...">
+            ...
+          </DashboardCard>
+        </Grid>
+        <Grid xs={ 12 } sm={ 4 }>
+          <DashboardCard title="...">
+            ...
+          </DashboardCard>
+        </Grid>
+        <Grid xs={ 12 } sm={ 4 }>
+          <DashboardCard title="...">
+            ...
+          </DashboardCard>
+        </Grid>
+        <Grid xs={ 12 } sm={ 8 }>
+          <DashboardCard title="...">
+            ...
+          </DashboardCard>
+        </Grid>
+        <Grid xs={ 12 } sm={ 4 }>
+          <DashboardCard title="...">
+            ...
+          </DashboardCard>
         </Grid>
       </Grid>
     </ContentPage>

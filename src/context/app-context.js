@@ -14,7 +14,7 @@ export const AppContextProvider = ({ children }) => {
   const { mode, setMode } = useColorScheme()
   const [drawerVisibility, setDrawerVisibility] = useState(false)
   const [loading, setLoading] = useState(false)
-  const { sampleData } = useData()
+  const { sampleData, fetchData } = useData()
 
   const togglePreferences = () => setDrawerVisibility(!drawerVisibility)
   const closePreferences = () => setDrawerVisibility(false)
@@ -71,7 +71,10 @@ export const AppContextProvider = ({ children }) => {
         },
       },
       windowSize,
-      sampleData,
+      data: {
+        fetch: fetchData,
+        sample: sampleData,
+      },
     }}>
       { children }
     </AppContext.Provider>

@@ -11,24 +11,29 @@ import {
 import theme from './theme'
 import './index.css'
 import '@fontsource/inter'
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const queryClient = new QueryClient()
 
 const container = document.getElementById('root')
 const root = createRoot(container)
 
 const ProvisionedApp = () => (
-  <CssVarsProvider theme={ theme } defaultMode="light">
-    <HashRouter>
-      <AuthProvider>
-        <DataProvider>
-          <MapProvider>
+  <QueryClientProvider client={ queryClient }>
+    <CssVarsProvider theme={ theme } defaultMode="light">
+      <HashRouter>
+        <AuthProvider>
+          <DataProvider>
             <AppContextProvider>
-              <App />
+              <MapProvider>
+                <App />
+              </MapProvider>
             </AppContextProvider>
-          </MapProvider>
-        </DataProvider>
-      </AuthProvider>
-    </HashRouter>
-  </CssVarsProvider>
+          </DataProvider>
+        </AuthProvider>
+      </HashRouter>
+    </CssVarsProvider>
+  </QueryClientProvider>
 )
 
 root.render(<ProvisionedApp />)
