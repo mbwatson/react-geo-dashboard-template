@@ -75,21 +75,22 @@ function generateRecord() {
 	const chemicalFormula = chemical.formula
 	const molecularMass = chemical.mass
 	const dtxsID = chemical.dtxsId
-	const retentionTime = faker.number.float({ min: 1, max: 10 })
+	const retentionTime = faker.number.float({ min: 1, max: 10 }).toFixed(2)
 	const idConfidenceLevel = faker.helpers.arrayElement([
 		'1',
-		'2a (library spectrum match)',
-		'2b (de novo spectral assignment, single structure matches)',
-		'4 (known formula)',
+		'2a',
+		'2b',
+		'3',
+		'4',
 	])
-	const abundance = faker.number.float({ min: 5, max: 1500000 })
+	const abundance = faker.number.float({ min: 5, max: 1500000 }).toFixed(2)
 	const units = faker.helpers.arrayElement([
 		'ng/ml',
 		'ng/g',
 		'ng/L',
 		'Instrument Abundance',
 	])
-	const mrlOrDl = faker.number.float({ min: 0.1 , max: 10000, fractionDigits: 1 })
+	const mrlOrDl = faker.number.float({ min: 0.1 , max: 10000, fractionDigits: 1 }).toFixed(2)
 
 	// assemble
 	const study = {

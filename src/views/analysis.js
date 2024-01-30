@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react'
 import { Box, Button, ButtonGroup, Checkbox, Dropdown, Input, Menu, List, ListItem, MenuButton, Option, Select, Sheet } from '@mui/joy'
 import { useAppContext } from '@context'
-import { ContentPage } from '@components/layout'
+import { FullscreenPage } from '@components/layout'
 import {
   createColumnHelper,
   flexRender,
@@ -18,95 +18,113 @@ const columnHelper = createColumnHelper()
 const columns = [
   columnHelper.group({
     id: 'study',
-    header: () => <span>Study</span>, footer: () => <span>Study</span>,
+    header: () => <span>Study</span>,
+    footer: () => <span>Study</span>,
     columns: [
       {
         accessorKey: 'study.dataset',
-        header: () => <span>Dataset</span>, footer: () => <span>Dataset</span>,
+        header: () => <span>Dataset</span>,
+        footer: () => <span>Dataset</span>,
         cell: info => info.getValue(),
       },
       {
         accessorKey: 'study.medium',
-        header: () => <span>Medium</span>, footer: () => <span>Medium</span>,
+        header: () => <span>Medium</span>,
+        footer: () => <span>Medium</span>,
         cell: info => info.getValue(),
       },
       {
         accessorKey: 'study.sampleCount',
-        header: () => <span>Sample #</span>, footer: () => <span>Sample #</span>,
+        header: () => <span>Sample #</span>,
+        footer: () => <span>Sample #</span>,
         cell: info => info.getValue(),
       },
       {
         accessorKey: 'study.targetOrNta',
-        header: () => <span>Target / NTA</span>, footer: () => <span>Target / NTA</span>,
+        header: () => <span>Target / NTA</span>,
+        footer: () => <span>Target / NTA</span>,
         cell: info => info.getValue(),
       },
     ]
   }),
   columnHelper.group({
     id: 'location',
-    header: () => <span>Location</span>, footer: () => <span>Location</span>,
+    header: () => <span>Location</span>,
+    footer: () => <span>Location</span>,
     columns: [
       {
         accessorKey: 'location.city',
         cell: info => info.getValue(),
-        header: () => <span>City</span>, footer: () => <span>City</span>,
+        header: () => <span>City</span>,
+        footer: () => <span>City</span>,
       },
       {
         accessorKey: 'location.state',
         cell: info => info.getValue(),
-        header: () => <span>State</span>, footer: () => <span>State</span>,
+        header: () => <span>State</span>,
+        footer: () => <span>State</span>,
       },
       {
         accessorKey: 'location.zipCode',
         cell: info => info.getValue(),
-        header: () => <span>ZIP Code</span>, footer: () => <span>ZIP Code</span>,
+        header: () => <span>ZIP</span>,
+        footer: () => <span>ZIP</span>,
       },
       {
         accessorKey: 'location.lat',
         cell: info => info.getValue(),
-        header: () => <span>Latitude</span>, footer: () => <span>Latitude</span>,
+        header: () => <span>Latitude</span>,
+        footer: () => <span>Latitude</span>,
       },
       {
         accessorKey: 'location.long',
         cell: info => info.getValue(),
-        header: () => <span>Longitude</span>, footer: () => <span>Longitude</span>,
+        header: () => <span>Longitude</span>,
+        footer: () => <span>Longitude</span>,
       },
     ],
   }),
   columnHelper.group({
     id: 'temporal',
-    header: () => <span>Temporal</span>, footer: () => <span>Temporal</span>,
+    header: () => <span>Temporal</span>,
+    footer: () => <span>Temporal</span>,
     columns: [
       {
         accessorKey: 'temporal.sampleDate',
         cell: info => new Date(info.getValue()).toLocaleDateString(),
-        header: () => <span>Sample Date</span>, footer: () => <span>Sample Date</span>,
+        header: () => <span>Sample Date</span>,
+        footer: () => <span>Sample Date</span>,
       },
       {
         accessorKey: 'temporal.analysisDate',
         cell: info => new Date(info.getValue()).toLocaleDateString(),
-        header: () => <span>Analysis Date</span>, footer: () => <span>Analysis Date</span>,
+        header: () => <span>Analysis Date</span>,
+        footer: () => <span>Analysis Date</span>,
       },
     ],
   }),
   columnHelper.group({
     id: 'chem-id',
-    header: () => <span>Chemical Identity</span>, footer: () => <span>Chemical Identity</span>,
+    header: () => <span>Chemical Identity</span>,
+    footer: () => <span>Chemical Identity</span>,
     columns: [
       {
         accessorKey: 'chemicalId.chemicalName',
         cell: info => info.getValue(),
-        header: () => <span>Chemical Name</span>, footer: () => <span>Chemical Name</span>,
+        header: () => <span>Chemical Name</span>,
+        footer: () => <span>Chemical Name</span>,
       },
       {
         accessorKey: 'chemicalId.dtxsID',
         cell: info => info.getValue(),
-        header: () => <span>DTXS ID</span>, footer: () => <span>DTXS ID</span>,
+        header: () => <span>DTXS ID</span>,
+        footer: () => <span>DTXS ID</span>,
       },
       {
         accessorKey: 'chemicalId.chemicalFormula',
         cell: info => <InlineMath math={ info.getValue() } />,
-        header: () => <span>Chemical Formula</span>, footer: () => <span>Chemical Formula</span>,
+        header: () => <span>Chemical Formula</span>,
+        footer: () => <span>Chemical Formula</span>,
       },
     ],
   }),
@@ -119,38 +137,45 @@ const columns = [
       {
         accessorKey: 'nontargetedChemicalId.molecularMass',
         cell: info => info.getValue(),
-        header: () => <span>Molecular Mass (g/mol)</span>, footer: () => <span>Molecular Mass (g/mol)</span>,
+        header: () => <span>Molecular Mass (g/mol)</span>,
+        footer: () => <span>Molecular Mass (g/mol)</span>,
       },
       {
         accessorKey: 'nontargetedChemicalId.retentionTime',
         cell: info => info.getValue(),
-        header: () => <span>Retention Time</span>, footer: () => <span>Retention Time</span>,
+        header: () => <span>Retention Time</span>,
+        footer: () => <span>Retention Time</span>,
       },
       {
         accessorKey: 'nontargetedChemicalId.idConfidenceLevel',
         cell: info => info.getValue(),
-        header: () => <span>ID Confidence Level</span>, footer: () => <span>ID Confidence Level</span>,
+        header: () => <span>ID Confidence Level</span>,
+        footer: () => <span>ID Confidence Level</span>,
       },
     ],
   }),
   columnHelper.group({
     id: 'quantitation',
-    header: () => <span>Quantitation</span>, footer: () => <span>Quantitation</span>,
+    header: () => <span>Quantitation</span>,
+    footer: () => <span>Quantitation</span>,
     columns: [
       {
         accessorKey: 'quantitation.abundance',
         cell: info => info.getValue(),
-        header: () => <span>Abundance</span>, footer: () => <span>Abundance</span>,
+        header: () => <span>Abundance</span>,
+        footer: () => <span>Abundance</span>,
       },
       {
         accessorKey: 'quantitation.units',
         cell: info => info.getValue(),
-        header: () => <span>Units</span>, footer: () => <span>Units</span>,
+        header: () => <span>Units</span>,
+        footer: () => <span>Units</span>,
       },
       {
         accessorKey: 'quantitation.mrlOrDl',
         cell: info => info.getValue(),
-        header: () => <span>MRL / DL</span>, footer: () => <span>MRL / DL</span>,
+        header: () => <span>MRL / DL</span>,
+        footer: () => <span>MRL / DL</span>,
       },
     ],
   }),
@@ -176,6 +201,7 @@ export const AnalysisView = () => {
   const table = useReactTable({
     data: dataQuery.data?.rows ?? [],
     columns,
+    autoResetPage: false,
     pageCount: dataQuery.data?.pageCount ?? -1,
     state: {
       columnVisibility,
@@ -201,6 +227,8 @@ export const AnalysisView = () => {
       'span': { alignSelf: 'center' },
       'input': { alignSelf: 'stretch', width: '4rem' },
       'select': { alignSelf: 'stretch' },
+      position: 'sticky',
+      top: 0,
     }}>
       {/* page navigation buttons */}
       <ButtonGroup variant="soft">
@@ -222,6 +250,7 @@ export const AnalysisView = () => {
         >LAST</Button>
       </ButtonGroup>
 
+      {/* current page & total pages */}
       <span className="summary">
         Page { table.getState().pagination.pageIndex + 1 } {' '}
         of { table.getPageCount() }
@@ -230,9 +259,7 @@ export const AnalysisView = () => {
       <span>|</span>
 
       {/* jump to page */}
-      <span className="page-jump">
-        Go to page:
-      </span>
+      <span className="page-jump">Go to page</span>
       <Input
         type="number"
         defaultValue={table.getState().pagination.pageIndex + 1}
@@ -250,7 +277,10 @@ export const AnalysisView = () => {
         variant="soft"
       >
         {[10, 25, 50, 100].map(size => (
-          <Option key={ size } value={ size }>{ size } per page</Option>
+          <Option
+            key={ size }
+            value={ size }
+          >{ size } per page</Option>
         ))}
       </Select>
 
@@ -261,7 +291,6 @@ export const AnalysisView = () => {
           <List>
             {
               table.getAllLeafColumns().map(column => {
-                console.log(column)
                 return (
                   <ListItem key={ column.id }>
                     <Checkbox
@@ -280,9 +309,23 @@ export const AnalysisView = () => {
     </Box>
   ), [pagination])
 
+  const Loadingindicator = useCallback(() => {
+    const idleStyle = {
+      filter: 'opacity(0.0)',
+    }
+    const loadingStyle = {
+      filter: 'opacity(1.0)',
+    }
+    return (
+      <Box sx={{
+        transition: 'filter 250ms',
+        ...(dataQuery.isFetching ? loadingStyle : idleStyle)
+      }}>LOADING</Box>
+    )
+  }, [dataQuery.isFetching])
 
   return (
-    <ContentPage maxWidth="100vh">
+    <FullscreenPage sx={{ px: 4, py: 2 }}>
       <Sheet sx={{
         mt: '4.5rem',
         width: '100%',
@@ -305,6 +348,10 @@ export const AnalysisView = () => {
         td: {
           borderBottom: '1px solid #333',
           borderRight: '1px solid #333',
+          p: 0.5,
+          whiteSpace: 'nowrap',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
         },
         'tr:first-of-type th': { fontSize: '100%' },
         'tr:nth-of-type(2) th': { fontSize: '75%' },
@@ -319,7 +366,7 @@ export const AnalysisView = () => {
       }}>
         <Pagination />
 
-        <Box>{ dataQuery.isFetching ? 'Loading...' : '' }</Box>
+        <Loadingindicator />
 
         <table className={ dataQuery.isFetching ? 'loading' : 'loaded' }>
           <thead>
@@ -380,7 +427,7 @@ export const AnalysisView = () => {
         </table>
 
       </Sheet>
-    </ContentPage>
+    </FullscreenPage>
   )
 }
 

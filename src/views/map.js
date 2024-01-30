@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FullscreenPage } from '@components/layout'
 import { Mapper, ControlPanel } from '@components/mapper'
 import { useAppContext, useMap } from '@context'
@@ -10,20 +10,29 @@ const clusterLayer = {
   source: 'nc-cities',
   filter: ['has', 'point_count'],
   paint: {
-    'circle-color': ['step', ['get', 'point_count'], '#007abc', 25, '#19a7bc', 50, '#3ebca3'],
-    'circle-radius': ['step', ['get', 'point_count'], 25, 100, 50, 200, 40]
+    // step expressions, https://docs.mapbox.com/style-spec/reference/expressions/#step
+    'circle-radius': ['step', ['get', 'point_count'],
+      /* radius */ 15, /* for point count up to */ 3,
+      /* radius */ 20, /* for point count up to */ 9,
+      /* and radius */ 35 /* for more than that. */
+    ],
+    'circle-color': [ 'step', ['get', 'point_count'],
+      '#205555', 3,
+      '#552055', 9,
+      '#777740'
+    ],
   },
 }
 
 const clusterCountLayer = {
   id: 'cluster-count',
   type: 'symbol',
-  source: 'nc-cities',
+  source: 'samples',
   filter: ['has', 'point_count'],
   layout: {
     'text-field': '{point_count_abbreviated}',
     'text-font': ['literal', ['DIN Offc Pro Italic', 'Arial Unicode MS Regular']],
-    'text-size': 12,
+    'text-size': 16,
   },
   paint: {
     'text-color': '#fff',
@@ -33,13 +42,13 @@ const clusterCountLayer = {
 const unclusteredPointLayer = {
   id: 'unclustered-point',
   type: 'circle',
-  source: 'nc-cities',
+  source: 'samples',
   filter: ['!', ['has', 'point_count']],
   paint: {
     'circle-color': '#66bc94',
-    'circle-radius': 10,
+    'circle-radius': 6,
     'circle-stroke-width': 1,
-    'circle-stroke-color': '#66bc94'
+    'circle-stroke-color': '#368c64'
   }
 }
 
@@ -61,6 +70,10 @@ export const MapView = () => {
   }
 
   const handleClickMap = event => {
+    if (!mapRef.current) {
+      return
+    }
+
     // get the feature of the click target
     const feature = event?.features?.[0]
     
@@ -86,7 +99,7 @@ export const MapView = () => {
         setPopupInfo({
           lat: feature.geometry.coordinates[1],
           long: feature.geometry.coordinates[0],
-          title: 'SAMPLES',
+          title: `${ aFeatures.length } SAMPLES`,
           data: samples,
         })
       })
@@ -107,6 +120,10 @@ export const MapView = () => {
   const handleClosePopup = () => {
     setPopupInfo(null)
   }
+
+  useEffect(() => {
+    setPopupInfo(null)
+  }, [mapRef?.current?.getZoom() ?? 0]) // is this ok?
 
   return (
     <FullscreenPage sx={{
@@ -131,18 +148,22 @@ export const MapView = () => {
         height: '1rem',
         margin: 'auto',
         borderWidth: 0,
-        backgroundColor: '#ccc',
+        backgroundColor: 'background.surface',
         transform: 'rotate(45deg) translate(0.4rem, 0.4rem)',
       },
       '.mapboxgl-popup-content': {
         borderRadius: 5,
         p: 1,
-        backgroundColor: '#ccc',
+        color: 'text.primary',
+        backgroundColor: 'background.surface',
+        'pre': {
+          fontSize: '75%',
+        },
       },
     }}>
       {
         !windowSize.height || !windowSize.width
-        ? 'LOADING'
+        ? 'Loading...'
         : (
           <Mapper
             height={ windowSize.height }
@@ -172,13 +193,14 @@ export const MapView = () => {
                   onClose={ handleClosePopup }
                 >
                   <strong>{ popupInfo.title }</strong>
+
                   <pre>
                     { JSON.stringify(popupInfo.data, null, 2) }
                   </pre>
 
                   <br />
                   
-                  <a href="#">view in table</a>
+                  <a href="/#/analysis">explore this</a>
                 </Popup>
               )
             }
