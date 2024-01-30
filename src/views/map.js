@@ -1,129 +1,10 @@
-import { useEffect, useState } from 'react'
+import { Fragment } from 'react'
 import { FullscreenPage } from '@components/layout'
-import { Mapper, ControlPanel } from '@components/mapper'
-import { useAppContext, useMap } from '@context'
-import { Layer, Popup, Source } from 'react-map-gl'
-
-const clusterLayer = {
-  id: 'clusters',
-  type: 'circle',
-  source: 'nc-cities',
-  filter: ['has', 'point_count'],
-  paint: {
-    // step expressions, https://docs.mapbox.com/style-spec/reference/expressions/#step
-    'circle-radius': ['step', ['get', 'point_count'],
-      /* radius */ 15, /* for point count up to */ 3,
-      /* radius */ 20, /* for point count up to */ 9,
-      /* and radius */ 35 /* for more than that. */
-    ],
-    'circle-color': [ 'step', ['get', 'point_count'],
-      '#205555', 3,
-      '#552055', 9,
-      '#777740'
-    ],
-  },
-}
-
-const clusterCountLayer = {
-  id: 'cluster-count',
-  type: 'symbol',
-  source: 'samples',
-  filter: ['has', 'point_count'],
-  layout: {
-    'text-field': '{point_count_abbreviated}',
-    'text-font': ['literal', ['DIN Offc Pro Italic', 'Arial Unicode MS Regular']],
-    'text-size': 16,
-  },
-  paint: {
-    'text-color': '#fff',
-  },
-}
-
-const unclusteredPointLayer = {
-  id: 'unclustered-point',
-  type: 'circle',
-  source: 'samples',
-  filter: ['!', ['has', 'point_count']],
-  paint: {
-    'circle-color': '#66bc94',
-    'circle-radius': 6,
-    'circle-stroke-width': 1,
-    'circle-stroke-color': '#368c64'
-  }
-}
+import { Mapper, ControlPanel, ViewStatePanel } from '@components/mapper'
+import { useAppContext } from '@context'
 
 export const MapView = () => {
-  const { data, windowSize } = useAppContext()
-  const { mapRef } = useMap()
-  const [popupInfo, setPopupInfo] = useState(null)
-
-  const geojson = {
-    type: 'FeatureCollection',
-    features: data.sample.data.map(sample => ({
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [sample.location.long, sample.location.lat],
-      },
-      properties: { ...sample },
-    })),
-  }
-
-  const handleClickMap = event => {
-    if (!mapRef.current) {
-      return
-    }
-
-    // get the feature of the click target
-    const feature = event?.features?.[0]
-    
-    // if no feature layer is present, bail out now.
-    if (!feature) {
-      handleClosePopup()
-      return
-    }
-
-    // we have a feature layer.
-    // we may want different behavior whether
-    // the user clicks a cluster or a single point.
-
-    // if we have a cluster...
-    if (feature.layer.id === clusterLayer.id) {
-      // with the source data...
-      const clusterSource = mapRef.current.getSource('samples')
-      // ...and the id of the clicked-on cluster,
-      const { cluster_id } = feature.properties
-      // we'll identify the samples that comprise it.
-      clusterSource.getClusterLeaves(cluster_id, 100, 0, function(error, aFeatures){
-        const samples = aFeatures.map(f => f.properties.id)
-        setPopupInfo({
-          lat: feature.geometry.coordinates[1],
-          long: feature.geometry.coordinates[0],
-          title: `${ aFeatures.length } SAMPLES`,
-          data: samples,
-        })
-      })
-      return
-    }
-
-    // we have a single point.
-    if (feature.layer.id === unclusteredPointLayer.id) {
-      setPopupInfo({
-        lat: feature.geometry.coordinates[1],
-        long: feature.geometry.coordinates[0],
-        title: 'SAMPLE',
-        data: feature.properties.id,
-      })
-    }
-  }
-
-  const handleClosePopup = () => {
-    setPopupInfo(null)
-  }
-
-  useEffect(() => {
-    setPopupInfo(null)
-  }, [mapRef?.current?.getZoom() ?? 0]) // is this ok?
+  const { windowSize } = useAppContext()
 
   return (
     <FullscreenPage sx={{
@@ -165,46 +46,13 @@ export const MapView = () => {
         !windowSize.height || !windowSize.width
         ? 'Loading...'
         : (
-          <Mapper
-            height={ windowSize.height }
-            width={ windowSize.width }
-            interactiveLayerIds={ [clusterLayer.id, unclusteredPointLayer.id] }
-            onClick={ handleClickMap }
-          >
-            <Source
-              id="samples"
-              type="geojson"
-              data={ geojson }
-              cluster={ true }
-              clusterMaxZoom={ 14 }
-              clusterRadius={ 50 }
-            >
-              <Layer { ...clusterLayer } />
-              <Layer { ...clusterCountLayer } />
-              <Layer { ...unclusteredPointLayer } />
-            </Source>
-            {
-              !!popupInfo && (
-                <Popup
-                  anchor="top"
-                  tipSize={ 50 }
-                  longitude={ popupInfo.long }
-                  latitude={ popupInfo.lat }
-                  onClose={ handleClosePopup }
-                >
-                  <strong>{ popupInfo.title }</strong>
-
-                  <pre>
-                    { JSON.stringify(popupInfo.data, null, 2) }
-                  </pre>
-
-                  <br />
-                  
-                  <a href="/#/analysis">explore this</a>
-                </Popup>
-              )
-            }
-          </Mapper>
+          <Fragment>
+            <Mapper
+              height={ windowSize.height }
+              width={ windowSize.width }
+            />
+            <ViewStatePanel />
+          </Fragment>
         )
       }
       <ControlPanel />

@@ -10,7 +10,7 @@ import { ColorModeToggle, PreferencesDrawer } from '@components/preferences'
 //
 
 export const App = () => {
-  const { auth, pageRef } = useAppContext()
+  const { auth, pageRef, preferences } = useAppContext()
 
   const headerActions = useMemo(() => {
     let actions = [<AuthMenu key="auth-action-button" />]
@@ -37,7 +37,7 @@ export const App = () => {
         actions={ headerActions }
       />
       
-      <Sheet component="main" ref={ pageRef }>
+      <Sheet component="main" ref={ pageRef } className={ preferences.colorMode.dark ? 'dark-mode' : 'light-mode' }>
         <Router />
       </Sheet>
 

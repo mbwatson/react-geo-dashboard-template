@@ -2,12 +2,10 @@ import { Grid } from '@mui/joy'
 import { ContentPage } from '@components/layout'
 import { useAppContext } from '@context'
 import { DashboardCard } from '@components/dashboard-card'
-import { Mapper } from '@components/mapper'
-import { Layer, Source } from 'react-map-gl'
 
 const Counts = () => {
   const { data } = useAppContext()
-  const counts = data.sample.data.reduce((acc, d) => {
+  const counts = data.data.reduce((acc, d) => {
     if (d.study.dataset in acc) {
       acc[d.study.dataset] += 1
       return acc
@@ -27,7 +25,7 @@ const Counts = () => {
 
 const SamplesByMedium = () => {
   const { data } = useAppContext()
-  const counts = data.sample.data.reduce((acc, d) => {
+  const counts = data.data.reduce((acc, d) => {
     if (d.study.medium in acc) {
       acc[d.study.medium] += d.study.sampleCount
       return acc
@@ -47,7 +45,7 @@ const SamplesByMedium = () => {
 
 const SampleLocationCounts = () => {
   const { data } = useAppContext()
-  const counts = data.sample.data.reduce((acc, d) => {
+  const counts = data.data.reduce((acc, d) => {
     const locationKey = `${ d.location.city }, ${ d.location.state }`
     if (locationKey in acc) {
       acc[locationKey] += 1
@@ -66,43 +64,6 @@ const SampleLocationCounts = () => {
   )
 }
 
-const SampleLocationsMap = () => {
-  const { data } = useAppContext()
-
-  const geojson = {
-    type: 'FeatureCollection',
-    features: data.sample.data.map(({ location }) => ({
-      type: 'Feature', geometry: { type: 'Point', coordinates: [location.long, location.lat] }
-    })),
-  }
-
-  const layerStyle = {
-    id: 'point',
-    type: 'circle',
-    paint: {
-      'circle-radius': 10,
-      'circle-color': '#007abc'
-    }
-  }
-
-  return (
-    <DashboardCard title="Sample Locations">
-      <Mapper showViewState={ false } height={ 500 }>
-        <Source
-          id="samples"
-          type="geojson"
-          data={ geojson }
-          cluster={ true }
-          clusterMaxZoom={ 14 }
-          clusterRadius={ 50 }
-        >
-          <Layer { ...layerStyle } />
-        </Source>
-      </Mapper>
-    </DashboardCard>
-  )
-}
-
 export const HomeView = () => {
   return (
     <ContentPage>
@@ -117,7 +78,9 @@ export const HomeView = () => {
           <SampleLocationCounts />
         </Grid>
         <Grid xs={ 12 } sm={ 8 }>
-          <SampleLocationsMap />
+          <DashboardCard title="...">
+            ...
+          </DashboardCard>
         </Grid>
         <Grid xs={ 12 } sm={ 4 }>
           <DashboardCard title="...">

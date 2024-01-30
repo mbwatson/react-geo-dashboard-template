@@ -1,18 +1,17 @@
 const fs = require('fs')
 const path = require('path')
 const { faker } = require('@faker-js/faker')
-const states = require('./states.js')
 const arg = require('arg')
 const { v4: uuidv4 } = require('uuid')
 const { cities: nc } = require('./cities/nc.json')
 const { cities: wa } = require('./cities/wa.json')
-const {chemicals} = require('./pfas-chemicals.json')
+const { chemicals } = require('./pfas-chemicals.json')
+
+const testContentPath = path.join('./src', 'content')
+const testContentFile = path.join(testContentPath, 'test-data-v2.json')
 const cities = { ...nc, ...wa }
 
 // defaults
-const testContentPath = path.join('./src', 'content')
-const testContentFile = path.join(testContentPath, 'test-data-v2.json')
-
 let SAMPLE_COUNT = 1
 let STUDY_COUNT = 2
 let VERBOSE_MODE = false
@@ -68,8 +67,9 @@ function generateRecord() {
 		origin: [cities[city].lat, cities[city].long],
 		radius: 2,
 	})
-	const sampleDate = faker.date.between({ from: '2020-01-01T00:00:00.000Z', to: new Date().toISOString() })
-	const analysisDate = faker.date.between({ from: sampleDate, to: new Date().toISOString() })
+	const now = new Date().toISOString()
+	const sampleDate = faker.date.between({ from: '2020-01-01T00:00:00.000Z', to: now })
+	const analysisDate = faker.date.between({ from: sampleDate, to: now })
 	const chemical = faker.helpers.arrayElement(chemicals)
 	const chemicalName = chemical.name
 	const chemicalFormula = chemical.formula
@@ -148,7 +148,7 @@ VERBOSE_MODE &&
   )
 
 // log generated data summary
-console.log(`| successfully wrote ${ SAMPLE_COUNT } records to ${testContentPath}.`)
+console.log(`| successfully wrote ${ SAMPLE_COUNT } records to ${ testContentPath }.`)
 
 // conditionally write generated data
 if (WRITE_MODE) {

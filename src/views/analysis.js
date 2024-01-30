@@ -190,7 +190,7 @@ export const AnalysisView = () => {
 
   const dataQuery = useQuery(
     ['sample-data', pagination],
-    () => data.fetch(pagination),
+    () => data.fetchData(pagination),
     { keepPreviousData: true }
   )
 
@@ -325,7 +325,7 @@ export const AnalysisView = () => {
   }, [dataQuery.isFetching])
 
   return (
-    <FullscreenPage sx={{ px: 4, py: 2 }}>
+    <FullscreenPage sx={{ px: 4, py: 2, overflowY: 'scroll' }}>
       <Sheet sx={{
         mt: '4.5rem',
         width: '100%',

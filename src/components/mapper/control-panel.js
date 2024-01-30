@@ -1,18 +1,14 @@
 import {
-  Button,
   Card,
   List,
   ListDivider,
   ListItem,
-  ListItemButton,
-  ListItemDecorator,
 } from '@mui/joy'
-import {
-  Add as AddIcon,
-} from '@mui/icons-material'
+import { LayerSelect } from './layer-select'
 import { LocationSelect } from './location-select'
 
 export const ControlPanel = () => {
+
   return (
     <Card sx={{
       flexDirection: 'row',
@@ -29,17 +25,7 @@ export const ControlPanel = () => {
     }}>
       <List orientation="horizontal" size="sm" sx={{ flex: 1 }}>
         <ListItem role="none">
-          <ListItemButton
-            role="menuitem"
-            slots={{ root: Button }}
-            slotProps={{ root: { variant: 'soft' } }}
-            aria-label="nothing"
-          >
-            <ListItemDecorator>
-              <AddIcon />
-            </ListItemDecorator>
-            Add {/* add sample layers, by dataset, by date, by...? */}
-          </ListItemButton>
+          <LayerSelect />
         </ListItem>
 
         <ListDivider />
