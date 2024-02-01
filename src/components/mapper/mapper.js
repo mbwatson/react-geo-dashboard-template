@@ -8,7 +8,7 @@ import {
 
 export const Mapper = ({ height, width, ...props }) => {
   const { preferences } = useAppContext()
-  const { mapRef, layers, popup, viewState } = useMap()
+  const { mapRef, mapStyle, layers, popup, viewState } = useMap()
 
   const handleClickMap = event => {
     if (!mapRef.current) {
@@ -70,7 +70,7 @@ export const Mapper = ({ height, width, ...props }) => {
       onMove={ event => viewState.set(event.viewState) }
       onClick={ handleClickMap }
       interactiveLayerIds={ [clusterLayer.id, unclusteredPointLayer.id] }
-      mapStyle={ `mapbox://styles/mapbox/${ preferences.colorMode.current }-v11` }
+      mapStyle={ `mapbox://styles/mapbox/${ mapStyle.getBaseMap(preferences.colorMode.current) }` }
       { ...props }
       source="mapbox://mvvatson.clkpnbbi50bu62dp5dxh26pee-5d8sq"
       mapboxAccessToken={ process.env.MAPBOX_TOKEN }

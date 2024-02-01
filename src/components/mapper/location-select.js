@@ -20,11 +20,11 @@ export const LocationSelect = () => {
       zoom: 12,
       duration: 2000,
     })
-  }, [])
+  }, [mapRef.current])
 
   const handleSelect = useCallback(({ longitude, latitude }) => () => {
-    mapRef.current.flyTo({ longitude, latitude })
-  }, [])
+    navigateTo({ longitude, latitude })
+  }, [mapRef.current])
 
   const handleClickMyLocation = () => {
     if (navigator.geolocation) {
@@ -33,14 +33,13 @@ export const LocationSelect = () => {
         // save the geolocation coordinates in two variables
         position => {
           const { latitude, longitude } = position.coords
-          console.log({ latitude, longitude })
           navigateTo({ latitude, longitude })
         },
-        // if there was an error getting the users location
-        (error) => {
+        // if there was an error getting the user's location
+        error => {
           console.error('Error getting user location:', error);
         }
-      );
+      )
     }
     // if geolocation is not supported by the users browser
     else {

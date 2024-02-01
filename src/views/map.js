@@ -15,7 +15,6 @@ export const MapView = () => {
         willChange: 'transform',
         zIndex: 999,
         backgroundColor: 'transparent',
-        color: 'black',
         minWidth: '300px',
         minHeight: '300px',
         overflow: 'hidden',

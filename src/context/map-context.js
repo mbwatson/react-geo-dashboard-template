@@ -1,4 +1,4 @@
-import { createContext, useContext, useRef, useState } from 'react'
+import { createContext, useCallback, useContext, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useLocalStorage } from '@hooks'
 import ncCityData from '@content/cities/nc.json'
@@ -12,6 +12,7 @@ const RALEIGH_NC = { label: 'Raleigh, NC', longitude: -78.644257, latitude: 35.7
 export const MapProvider = ({ children }) => {
   const mapRef = useRef(null)
   const [viewState, setViewState] = useLocalStorage('view-state', RALEIGH_NC)
+  const [mapStyle, setMapStyle] = useState('min')
 
   //
   const layers = {
@@ -50,12 +51,26 @@ export const MapProvider = ({ children }) => {
       longitude: ncCityData.cities[cityName].long,
     }))
 
+  const getBaseMap = useCallback(colorMode => {
+    const options = {
+      'min': colorMode === 'dark' ? 'dark-v11' : 'light-v11',
+      'nav': colorMode === 'dark' ? 'navigation-night-v1' : 'navigation-day-v1',
+      'sat': 'satellite-v9',
+    }
+    return options[mapStyle]
+  }, [mapStyle])
+
   return (
     <MapContext.Provider value={{
       mapRef,
       viewState: {
         current: viewState,
         set: setViewState,
+      },
+      mapStyle: {
+        current: mapStyle,
+        set: setMapStyle,
+        getBaseMap,
       },
       locationPresets,
       popup: {

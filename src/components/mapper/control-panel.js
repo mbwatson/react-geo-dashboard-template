@@ -6,6 +6,7 @@ import {
 } from '@mui/joy'
 import { LayerSelect } from './layer-select'
 import { LocationSelect } from './location-select'
+import { MapStyleSelect } from './map-style-select'
 
 export const ControlPanel = () => {
 
@@ -32,6 +33,12 @@ export const ControlPanel = () => {
 
         <ListItem role="none">
           <LocationSelect />
+        </ListItem>
+        
+        <ListDivider />
+
+        <ListItem role="none">
+          <MapStyleSelect />
         </ListItem>
         
       </List>
