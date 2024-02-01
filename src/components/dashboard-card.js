@@ -3,11 +3,10 @@ import { Card, CardContent, Divider, Typography } from '@mui/joy'
 import { useAppContext } from '@context'
 
 export const DashboardCard = ({ children, title }) => {
-  const { loadSomething, preferences } = useAppContext()
+  const { preferences } = useAppContext()
 
   return (
     <Card
-      onClick={ loadSomething }
       sx={{
         p: 1,
         textAlign: 'center',

@@ -65,7 +65,7 @@ function generateRecord() {
 	const zipCode = cities[city].zipCode
 	const [lat, long] = faker.location.nearbyGPSCoordinate({
 		origin: [cities[city].lat, cities[city].long],
-		radius: 2,
+		radius: 3,
 	})
 	const now = new Date().toISOString()
 	const sampleDate = faker.date.between({ from: '2020-01-01T00:00:00.000Z', to: now })
