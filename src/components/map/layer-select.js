@@ -21,7 +21,7 @@ export const LayerSelect = () => {
         color="primary"
         startDecorator={ <LayersIcon /> }
       >Layers</MenuButton>
-      <Menu>
+      <Menu placement="top-start" offset={ 10 }>
         <MenuItem onClick={ handleSelect('samples-cluster') }>
           <ListItemDecorator>
             <DatasetLayerIcon color={ layers.active.includes('samples-cluster') ? 'primary' : 'default' } />

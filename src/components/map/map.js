@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Map from 'react-map-gl'
 import { useAppContext, useMap } from '@context'
@@ -7,8 +8,20 @@ import {
 } from './cluster-layer'
 
 export const Mapper = ({ height, width, ...props }) => {
-  const { preferences } = useAppContext()
+  const { setLoading, preferences } = useAppContext()
   const { mapRef, mapStyle, layers, popup, viewState } = useMap()
+
+  useEffect(() => {
+    if (!mapRef.current) {
+      return
+    }
+    mapRef.current.on('movestart', function(){
+      setLoading(true)
+    })
+    mapRef.current.on('moveend', function(){
+      setLoading(false)
+    })
+  }, [mapRef.current])
 
   const handleClickMap = event => {
     if (!mapRef.current) {
@@ -30,7 +43,6 @@ export const Mapper = ({ height, width, ...props }) => {
 
     // if we have a cluster...
     if (feature.layer.id === clusterLayer.id) {
-      console.log('cluster')
       // with the source data...
       const clusterSource = mapRef.current.getSource('samples')
       // ...and the id of the clicked-on cluster,
