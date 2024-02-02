@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { FullscreenPage } from '@components/layout'
-import { Mapper, ControlPanel, ViewStatePanel } from '@components/mapper'
+import { Mapper, ControlPanel, ViewStatePanel } from '@components/map'
 import { useAppContext } from '@context'
 
 export const MapView = () => {

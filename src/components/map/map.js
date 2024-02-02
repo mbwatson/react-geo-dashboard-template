@@ -4,7 +4,7 @@ import { useAppContext, useMap } from '@context'
 import {
   clusterLayer,
   unclusteredPointLayer,
-} from '@components/mapper'
+} from './cluster-layer'
 
 export const Mapper = ({ height, width, ...props }) => {
   const { preferences } = useAppContext()
