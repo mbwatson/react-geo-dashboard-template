@@ -80,8 +80,12 @@ module.exports = {
             },
           },
         ],
-      },      
-    ]
+      },
+      {
+        test: /\.geojson$/,
+        type: 'json',
+      },
+    ],
   },
 
   plugins: plugins,

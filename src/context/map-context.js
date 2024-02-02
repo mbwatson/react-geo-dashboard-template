@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useLocalStorage } from '@hooks'
 import ncCityData from '@content/cities/nc.json'
-import { ClusterLayer } from '@components/map'
+import { ClusterLayer, CongressionalLayer, CountiesLayer } from '@components/map'
 
 const MapContext = createContext({ })
 export const useMap = () => useContext(MapContext)
@@ -17,6 +17,8 @@ export const MapProvider = ({ children }) => {
   //
   const layers = {
     'samples-cluster': ClusterLayer,
+    'counties': CountiesLayer,
+    'congressional': CongressionalLayer,
   }
   const [activeLayerIds, setActiveLayerIds] = useState(new Set())
   const showLayer = layerId => {

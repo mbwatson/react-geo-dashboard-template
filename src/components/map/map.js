@@ -5,7 +5,9 @@ import { useAppContext, useMap } from '@context'
 import {
   clusterLayer,
   unclusteredPointLayer,
-} from './cluster-layer'
+  countiesFillLayer,
+  congressionalFillLayer,
+} from './layers'
 
 export const Mapper = ({ height, width, ...props }) => {
   const { setLoading, preferences } = useAppContext()
@@ -81,7 +83,7 @@ export const Mapper = ({ height, width, ...props }) => {
       { ...viewState.current }
       onMove={ event => viewState.set(event.viewState) }
       onClick={ handleClickMap }
-      interactiveLayerIds={ [clusterLayer.id, unclusteredPointLayer.id] }
+      interactiveLayerIds={ [clusterLayer.id, unclusteredPointLayer.id, congressionalFillLayer.id] }
       mapStyle={ `mapbox://styles/mapbox/${ mapStyle.getBaseMap(preferences.colorMode.current) }` }
       { ...props }
       source="mapbox://mvvatson.clkpnbbi50bu62dp5dxh26pee-5d8sq"
